@@ -7,7 +7,7 @@ license       = "MIT"
 srcDir        = "src"
 bin           = @["blog"]
 
-
 # Dependencies
 
 requires "nim >= 1.4.8"
+requires "markdown >= 0.8.5"
