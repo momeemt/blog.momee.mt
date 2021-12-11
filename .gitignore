@@ -1,2 +1,5 @@
 blog
 dist/*
+.DS_Store
+*.css
+*.css.map
