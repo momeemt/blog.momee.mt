@@ -11,3 +11,4 @@ bin           = @["blog"]
 
 requires "nim >= 1.4.8"
 requires "markdown >= 0.8.5"
+requires "cligen >= 1.5.19"
