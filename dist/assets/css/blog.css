@@ -24,7 +24,7 @@ body {
 }
 
 h1 {
-  border-bottom: 0.08em black solid;
+  color: gray;
 }
 
 h2, h3 {
@@ -45,5 +45,71 @@ p {
 a {
   color: gray;
   text-decoration: none;
+}
+
+.drowsy\:\:articleCard {
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  border-radius: 15px;
+  width: 400px;
+  background-color: white;
+  margin: 12px 20px;
+  height: 300px;
+}
+
+.drowsy\:\:articleCard:hover {
+  -webkit-box-shadow: 10px 10px 30px 0 rgba(105, 105, 105, 0.3);
+          box-shadow: 10px 10px 30px 0 rgba(105, 105, 105, 0.3);
+}
+
+.drowsy\:\:articleCard__thumbnail {
+  width: 100%;
+  height: 45%;
+  border-radius: 15px 15px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.drowsy\:\:articleCard__body {
+  padding: 0 20px;
+}
+
+.drowsy\:\:articleCard__body--title {
+  line-height: 140%;
+  color: black;
+  height: 52px;
+}
+
+.drowsy\:\:articleCard__body--overview {
+  margin-bottom: 0;
+  font-size: small;
+}
+
+.drowsy\:\:articleCard__body--tags {
+  padding-top: 8px;
+}
+
+.drowsy\:\:articleCard__body--tag {
+  border: 1px gray solid;
+  border-radius: 10px;
+  padding: 3px 12px;
+  font-size: small;
+  margin: 0 4px;
+}
+
+.drowsy\:\:articleCard__body--date {
+  font-size: small;
+  text-align: right;
+  margin-bottom: 0;
+}
+
+.new-article:before {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid gray;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+  width: 100%;
 }
 /*# sourceMappingURL=blog.css.map */
