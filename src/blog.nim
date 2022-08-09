@@ -1,9 +1,15 @@
-import brack/brack
-import brack/libs/std
-import std/[os, strformat, macros]
+import brack
+import brackStd/[base, details]
+import std/[os, strformat]
 
-# static:
-#   for file in walkDir("articles"):
-#     let fileName = file.path[9..^4]
+const Library = Base & Details
+registerLibrary(Library)
 
-compile("articles/helloworld.[]", "helloworld")
+for file in walkDir("articles"):
+  let name = file.path[9..^4]
+  block:
+    var outputFile = open(&"dist/{name}.html", FileMode.fmWrite)
+    defer: outputFile.close()
+    outputFile.write(
+      lex(file.path).parse().generate()
+    )
