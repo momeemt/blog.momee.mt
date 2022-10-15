@@ -17,5 +17,6 @@ requires "https://github.com/momeemt/brackStd"
 
 # Tasks
 task buildBlog, "build blog":
+  exec "mkdir dist"
   exec "nimble run"
   exec "rm dist/blog"
