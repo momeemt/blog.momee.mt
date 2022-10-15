@@ -39,7 +39,7 @@ jobs:
       - run: nimble buildBlog
       - name: Setup Pages
         uses: actions/configure-pages@v2
-      - run: ls
+      - run: ls dist
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
