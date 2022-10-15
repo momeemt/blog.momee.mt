@@ -21,6 +21,7 @@ jobs:
         key: ${{ runner.os }}-nimble-${{ hashFiles('*.nimble') }}
     - uses: jiro4989/setup-nim-action@v1.1.4
     - run: nimble buildBlog
+    - run: ls -al .
     - name: Push to build branch
       uses: s0/git-publish-subdir-action@master
       env:
