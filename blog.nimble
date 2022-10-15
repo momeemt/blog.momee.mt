@@ -14,3 +14,8 @@ bin           = @["blog"]
 requires "nim >= 1.6.6"
 requires "https://github.com/momeemt/brack"
 requires "https://github.com/momeemt/brackStd"
+
+# Tasks
+task buildBlog, "build blog":
+  exec "nimble run"
+  exec "rm dist/blog"
