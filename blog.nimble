@@ -12,8 +12,6 @@ bin           = @["generator"]
 # Dependencies
 
 requires "nim >= 1.6.6"
-requires "https://github.com/momeemt/brack"
-requires "https://github.com/momeemt/brackStd"
 
 # Tasks
 task generate, "build blog":

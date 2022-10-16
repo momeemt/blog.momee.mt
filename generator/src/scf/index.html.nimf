@@ -1,5 +1,5 @@
 #? stdtmpl(subsChar = '$', metaChar = '#')
-#proc generateIndexHtml(greeting: string): string =
+#proc generateIndexHtml(pages: seq[tuple[text, href: string]]): string =
 #  result = ""
 
 <!DOCTYPE html>
@@ -12,7 +12,13 @@
   </head>
   <body>
     <div id="uniIndexRoot">
-      <h1>$greeting</h1>
+      <h1>blog.momee.mt</h1>
+      <div>
+        # for page in pages:
+          <p>
+            <a href="$page.href">$page.text</a>
+          </p>
+      </div>
     </div>
   </body>
 </html>
