@@ -27,7 +27,7 @@ jobs:
           path: ~/.nimble
           key: ${{ runner.os }}-nimble-${{ hashFiles('*.nimble') }}
       - uses: jiro4989/setup-nim-action@v1.1.4
-      - run: cd generator && nimble generate
+      - run: nimble generate
       - name: Push
         uses: s0/git-publish-subdir-action@develop
         env:
