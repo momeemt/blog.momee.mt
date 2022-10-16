@@ -14,20 +14,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Cache choosenim
-        id: cache-choosenim
-        uses: actions/cache@v1
-        with:
-          path: ~/.choosenim
-          key: ${{ runner.os }}-choosenim-${{ env.NIM_VERSION }}
-      - name: Cache nimble
-        id: cache-nimble
-        uses: actions/cache@v1
-        with:
-          path: ~/.nimble
-          key: ${{ runner.os }}-nimble-${{ hashFiles('*.nimble') }}
-      - uses: jiro4989/setup-nim-action@v1.1.4
-      - run: nimble generate
+      - uses: satackey/action-docker-layer-caching@v0.0.11
+        continue-on-error: true
+      - run: docker-compose build
+      - run: docker-compose up -d
+      - run: docker-compose exec blog.momee.mt nimble generate
       - name: Push
         uses: s0/git-publish-subdir-action@develop
         env:

@@ -21,7 +21,6 @@ for yearDir in walkDir("../articles"):
       let day = dayDir.path.split('/')[^1]
       for dir in walkDir(dayDir.path):
         let name = dir.path.split('/')[^1]
-        echo name
         block:
           createDir(&"../dist/{year}/{month}/{day}/")
           var outputFile = open(&"../dist/{year}/{month}/{day}/{name}.html", FileMode.fmWrite)
