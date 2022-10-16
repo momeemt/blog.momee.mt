@@ -8,7 +8,7 @@ registerLibrary(Library)
 for file in walkDir("articles"):
   let name = file.path[9..^4]
   block:
-    var outputFile = open(&"dist/{name}.html", FileMode.fmWrite)
+    var outputFile = open(&"../dist/{name}.html", FileMode.fmWrite)
     defer: outputFile.close()
     outputFile.write(
       lex(file.path).parse().generate()

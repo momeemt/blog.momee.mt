@@ -6,8 +6,8 @@ description   = "The momeemt's blog"
 license       = "MIT"
 backend       = "c"
 srcDir        = "src"
-binDir        = "dist"
-bin           = @["blog"]
+binDir        = "bin"
+bin           = @["generator"]
 
 # Dependencies
 
@@ -16,7 +16,6 @@ requires "https://github.com/momeemt/brack"
 requires "https://github.com/momeemt/brackStd"
 
 # Tasks
-task buildBlog, "build blog":
-  exec "mkdir -p dist"
+task generate, "build blog":
+  exec "mkdir -p ../dist"
   exec "nimble run -y"
-  exec "rm dist/blog"
