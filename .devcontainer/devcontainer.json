@@ -1,0 +1,9 @@
+{
+  "name": "Nim",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "blog.momee.mt",
+  "workspaceFolder": "/workspace",
+  "extensions": [
+      "kosz78.nim"
+  ]
+}
