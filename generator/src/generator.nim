@@ -12,6 +12,8 @@ include "scf/article.html.nimf"
 const Library = Base & Details
 registerLibrary(Library)
 
+os.copyFile("./src/css/style.css", "../dist/style.css")
+
 var pages: seq[tuple[text, href: string]] = @[]
 for yearDir in walkDir("../articles"):
   let year = yearDir.path.split('/')[^1]
