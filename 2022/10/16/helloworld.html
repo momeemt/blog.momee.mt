@@ -5,11 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../../style.css" rel="stylesheet">
     <title>blog.momee.mt</title>
   </head>
   <body>
     <div id="uniArticleRoot">
-      <article><h1>ブログを作った</h1><h2>ドメイン</h2><p>このブログは blog.momee.mt で運用されている。やや、mtとはどこのドメインなのですか？と興味があるオタクもいると思うが、これはマルタのドメインで手続きは面倒でやや高額だった。<br />だったが、ハンドルネームがドメイン名のみで表現できることが素晴らしすぎて買ってしまった<sup><a href="#1">1</a></sup><span style="      font-size: 8px;<br />    ">ブログを公開するまで & <span style="      font-style: italic;<br />    ">no contents</span> & だったわけだから、宝の持ち腐れ</span>。</p><h2>Brack</h2><p>Markdownの文法が（現実的には）バラバラであること、そもそもMarkdownをブログに使うことへの反感<sup><a href="#1">1</a></sup><span style="      font-size: 8px;<br />    ">逆張りオタクのここがダメ</span>があることなどからマークアップ言語のルールと変換器を作った。<br />MarkdownやScrapbox記法にかなり気持ちがあったため、特に違和感なく移行できている。VSCodeでシンタックスハイライトを効かせる拡張は必要だなとぼんやり思っているが、プレーンテキストでもそこそこ読みやすいため特に緊急性は感じていない。しばらくは標準ライブラリを充実させつつ、blog.momee.mtで使いたいコンポーネントを詰め込んだライブラリを作ってみても良いかもなと思っている。</p><p>ところでライブラリを悪用するとBrackの変換時に任意のコードを実行できるため怖い。ただ、あらゆるプログラミング言語のパッケージシステムはその懸念を排除できないし、BrackのパッケージはそもそもNimbleパッケージとして公開されていなければ使えないわけだからある程度許容されても良いのかなとは思う。</p><p>使い心地ではないが、これまでlexer、parser、generator<sup><a href="#1">1</a></sup><span style="      font-size: 8px;<br />    ">compiler、interpreter？用語に疎い</span>で構成されるまともな文字列解析をやったことがなかったので良い経験になった。大学入学後は言語処理系への気持ちが徐々に強まっており<sup><a href="#1">1</a></sup><span style="      font-size: 8px;<br />    ">理由はよく分からないが元々関心があったことと同期に文字列解析オタクがいてよく喋るので影響を受けているのかもしれない</span>、<a href="https://github.com/momeemt/n9cc">n9cc</a><sup><a href="#1">1</a></sup><span style="      font-size: 8px;<br />    ">9ccのNim実装</span>を書いたりしている。自分でも何かプログラミング言語を作ってみたいなとはぼんやり思うが、今のところ何か具体像があるわけではない。</p><h2>GitHub ActionとNetlify</h2><p></p></article>
+      <article><h1>ブログを作った</h1><h2>ドメイン</h2><p>このブログは blog.momee.mt で運用されている。やや、mtとはどこのドメインなのですか？と興味があるオタクもいると思うが、これはマルタのドメインで手続きは面倒でやや高額だった。<br />だったが、ハンドルネームがドメイン名のみで表現できることが素晴らしすぎて買ってしまった<sup><a href="#1">1</a></sup><span style="      font-size: 8px;<br />    ">ブログを公開するまで & <span style="      font-style: italic;<br />    ">no contents</span> & だったわけだから、宝の持ち腐れ</span>。</p><h2>Brack</h2><p>Markdownの文法が（現実的には）バラバラであること、そもそもMarkdownをブログに使うことへの反感<sup><a href="#1">1</a></sup><span style="      font-size: 8px;<br />    ">逆張りオタクのここがダメ</span>があることなどからマークアップ言語のルールと変換器を作った。<br />MarkdownやScrapbox記法にかなり気持ちがあったため、特に違和感なく移行できている。VSCodeでシンタックスハイライトを効かせる拡張は必要だなとぼんやり思っているが、プレーンテキストでもそこそこ読みやすいため特に緊急性は感じていない。しばらくは標準ライブラリを充実させつつ、blog.momee.mtで使いたいコンポーネントを詰め込んだライブラリを作ってみても良いかもなと思っている。</p><p>ところでライブラリを悪用するとBrackの変換時に任意のコードを実行できるため怖い。ただ、あらゆるプログラミング言語のパッケージシステムはその懸念を排除できないし、BrackのパッケージはそもそもNimbleパッケージとして公開されていなければ使えないわけだからある程度許容されても良いのかなとは思う。</p><p>使い心地ではないが、これまでlexer、parser、generator<sup><a href="#1">1</a></sup><span style="      font-size: 8px;<br />    ">compiler、interpreter？用語に疎い</span>で構成されるまともな文字列解析をやったことがなかったので良い経験になった。大学入学後は言語処理系への気持ちが徐々に強まっており<sup><a href="#1">1</a></sup><span style="      font-size: 8px;<br />    ">理由はよく分からないが元々関心があったことと同期に文字列解析オタクがいてよく喋るので影響を受けているのかもしれない</span>、<a href="https://github.com/momeemt/n9cc">n9cc</a><sup><a href="#1">1</a></sup><span style="      font-size: 8px;<br />    ">9ccのNim実装</span>を書いたりしている。自分でも何かプログラミング言語を作ってみたいなとはぼんやり思うが、今のところ何か具体像があるわけではない。</p><h2>Zennとの棲み分けについて</h2><p>技術記事は引き続きZennで投稿していきたい。現状ではどう考えてもZennの執筆環境の体験が良すぎる<sup><a href="#1">1</a></sup><span style="      font-size: 8px;<br />    ">標準ライブラリ以外使えない縛りを設けてしまったせいでシンタックスハイライトが詰んでいるんだ</span>し、何よりインターネットで初学者が容易にアクセス可能なNimの日本語文献を増やすにはZennの方が目的に合っていると思う。</p></article>
+      <div>
+        <a href="../../../index.html">記事一覧に戻る</a>
+      </div>
+      <footer>
+        <small>&copy; 2022 Mutsuha Asada</small>
+      </footer>
     </div>
   </body>
 </html>
