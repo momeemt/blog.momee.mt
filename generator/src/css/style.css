@@ -69,5 +69,6 @@ a {
 }
 
 sup a {
+  font-size: 10px;
   text-decoration: none;
 }
