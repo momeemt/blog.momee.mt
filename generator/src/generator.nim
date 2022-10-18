@@ -1,5 +1,7 @@
+import brackStd/base
 import brack
-import brackStd/[base, details]
+initBrack()
+
 import std/os
 import std/strformat
 import std/strutils
@@ -8,9 +10,6 @@ import compiler/renderer
 
 include "scf/index.html.nimf"
 include "scf/article.html.nimf"
-
-const Library = Base & Details
-registerLibrary(Library)
 
 os.copyFile("./src/css/style.css", "../dist/style.css")
 
@@ -27,9 +26,11 @@ for yearDir in walkDir("../articles"):
           createDir(&"../dist/{year}/{month}/{day}/")
           var outputFile = open(&"../dist/{year}/{month}/{day}/{name}.html", FileMode.fmWrite)
           defer: outputFile.close()
+          let parsed = lex(dir.path & "/index.[]").parse()
+          echo parsed
           outputFile.write(
             generateArticleHtml(
-              lex(dir.path & "/index.[]").parse().generate()
+              parsed.expander().generate()
             )
           )
         let title = block:
