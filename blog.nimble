@@ -15,7 +15,7 @@ requires "nim >= 1.6.6"
 
 # Tasks
 task generate, "build blog":
-  exec "nimble uninstall compiler brack brackStd -y; true"
-  exec "nimble install -y compiler https://github.com/momeemt/brack https://github.com/momeemt/brackStd"
+  exec "nimble uninstall compiler brack -y; true"
+  exec "nimble install -y compiler https://github.com/momeemt/brack"
   exec "cd generator && nimble generate"
   exec "cd frontend && nimble build"

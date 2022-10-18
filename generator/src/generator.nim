@@ -1,4 +1,3 @@
-import brackStd/base
 import brack
 initBrack()
 
@@ -30,7 +29,7 @@ for yearDir in walkDir("../articles"):
           echo parsed
           outputFile.write(
             generateArticleHtml(
-              parsed.expander().generate()
+              parsed.expand().generate()
             )
           )
         let title = block:
