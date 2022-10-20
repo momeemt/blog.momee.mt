@@ -26,7 +26,6 @@ for yearDir in walkDir("../articles"):
           var outputFile = open(&"../dist/{year}/{month}/{day}/{name}.html", FileMode.fmWrite)
           defer: outputFile.close()
           let parsed = lex(dir.path & "/index.[]").parse()
-          echo parsed
           outputFile.write(
             generateArticleHtml(
               parsed.expand().generate()

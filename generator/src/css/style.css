@@ -69,6 +69,33 @@ a {
 }
 
 sup a {
-  font-size: 10px;
+  font-size: 12px;
   text-decoration: none;
+}
+
+.footnote_ordered-list:target {
+  background-color: #edd;
+}
+
+.footnote_header {
+  font-size: 14px;
+  font-weight: 400;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 4px;
+  margin-top: 80px;
+}
+
+.footnote_ordered-list {
+  list-style-type: decimal;
+  padding-inline-start: 25px;
+}
+
+.footnote_ordered-list li {
+  font-size: 14px;
+  margin: 0;
+  padding: 0 4px;
+}
+
+.footnote_ordered-list li::marker {
+  font-weight: 400;
 }
