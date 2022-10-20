@@ -99,3 +99,18 @@ sup a {
 .footnote_ordered-list li::marker {
   font-weight: 400;
 }
+
+footer {
+  color: gray;
+  font-size: 12px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+footer a {
+  font-size: 12px;
+}
+
+footer small {
+  margin: 1em 0;
+}
