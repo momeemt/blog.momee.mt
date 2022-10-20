@@ -9,9 +9,18 @@ html {
 body {
   padding: 0;
   margin: 0;
-  display: flex;
-  justify-content: center;
   color: #444;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+#uniIndexRoot {
+  width: 100%;
 }
 
 @media screen and (max-width: 600px) {
@@ -42,7 +51,14 @@ h1 {
   font-size: 28px;
   font-weight: 400;
   border-bottom: 1.5px #ddd solid;
+  padding-left: 12px;
   padding-bottom: 12px;
+}
+
+.blog-name {
+  border: none;
+  text-align: center;
+  margin: 1em 0 0;
 }
 
 h2 {
@@ -59,17 +75,17 @@ hr {
 
 p {
   margin: 0.8em 0;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 a {
   color: gray;
-  font-size: 14px;
+  font-size: 16px;
   text-decoration: underline;
 }
 
 sup a {
-  font-size: 12px;
+  font-size: 14px;
   text-decoration: none;
 }
 
@@ -78,7 +94,7 @@ sup a {
 }
 
 .footnote_header {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   border-bottom: 1px solid #ddd;
   padding-bottom: 4px;
@@ -91,7 +107,7 @@ sup a {
 }
 
 .footnote_ordered-list li {
-  font-size: 14px;
+  font-size: 16px;
   margin: 0;
   padding: 0 4px;
 }
@@ -102,15 +118,115 @@ sup a {
 
 footer {
   color: gray;
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
   margin: 10px 0;
 }
 
 footer a {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 footer small {
   margin: 1em 0;
+}
+
+.blog-description {
+  margin: 0;
+  color:gray;
+  text-align: center;
+  font-size: 14px;
+}
+
+.articleCards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.articleCard {
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  border-radius: 15px;
+  width: 400px;
+  max-width: 80%;
+  background-color: white;
+  margin: 12px 20px;
+  height: 300px;
+}
+
+.articleCard a {
+  text-decoration: none;
+}
+
+.articleCard h3 {
+  margin: 10px 0;
+  font-weight: 400;
+}
+
+.articleCard:hover {
+  -webkit-box-shadow: 10px 10px 30px 0 rgba(105, 105, 105, 0.3);
+  box-shadow: 10px 10px 30px 0 rgba(105, 105, 105, 0.3);
+}
+
+.articleCard__thumbnail {
+  width: 100%;
+  height: 45%;
+  border-radius: 15px 15px 0 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.articleCard__body {
+  padding: 0 20px;
+}
+
+.articleCard__body--title {
+  line-height: 140%;
+  color: black;
+}
+
+.articleCard__body--overview {
+  margin-bottom: 18px;
+  font-size: small;
+}
+
+.articleCard__body--tags {
+  padding-top: 8px;
+}
+
+.articleCard__body--tag {
+  border: 1px gray solid;
+  border-radius: 10px;
+  padding: 3px 12px;
+  font-size: small;
+  margin: 0 4px;
+}
+
+.articleCard__body--date {
+  font-size: small;
+  text-align: right;
+  margin-bottom: 0;
+}
+
+.new-article {
+  width: 80%;
+  margin: 36px 10% 20px;
+  color: gray;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.new-article::before {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid gray;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  margin: auto;
 }

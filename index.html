@@ -6,16 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="./assets/favicon.ico">
     <title>blog.momee.mt</title>
   </head>
   <body>
     <div id="uniIndexRoot">
-      <h1>blog.momee.mt</h1>
-      <div>
-          <p>
-            <a href="2022/10/16/helloworld.html">ブログを作った</a>
-          </p>
+      <h1 class="blog-name">blog.momee.mt</h1>
+      <p class="blog-description">計算機とインディーズバンドとコントが好き、マヨネーズが苦手</p>
+      <div class="new-article">
+        <span style="background: #eee; padding: 0 20px; font-size: 18px;">
+          <i class="fas fa-kiwi-bird" style="margin-right: 8px;"></i>
+          新しい記事
+        </span>
       </div>
+      <div>
+        <div class="articleCards">
+          <div class="articleCard">
+            <a href="2022/10/16/helloworld.html">
+              <img class="articleCard__thumbnail" alt="no image of the article" src="./assets/no-image.png" />
+              <div class="articleCard__body">
+                <h3 class="articleCard__body--title">
+                  ブログを作った
+                </h3>
+                <p class="articleCard__body--overview">
+                  逆張りは精神的に安定しているときに用量を守って
+                </p>
+                <div class="articleCard__body--tags">
+                  <span class="articleCard__body--tag">
+                    ブログ
+                  </span>
+                  <span class="articleCard__body--tag">
+                    Nim
+                  </span>
+                </div>
+                <p class="articleCard__body--date">
+                  2022-10-16
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div>
+          <a href="https://github.com/momeemt/blog.momee.mt" target="_blank">source</a>
+        </div>
+        <small>&copy; 2022 Mutsuha Asada</small>
+      </footer>
     </div>
   </body>
 </html>
