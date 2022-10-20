@@ -6,13 +6,15 @@ import std/strformat
 import std/strutils
 import compiler/nimeval
 import compiler/renderer
+import compiler/ast
 
 include "scf/index.html.nimf"
 include "scf/article.html.nimf"
 
 os.copyFile("./src/css/style.css", "../dist/style.css")
+os.copyDir("./src/assets/", "../dist/assets/")
 
-var pages: seq[tuple[text, href: string]] = @[]
+var pages: seq[tuple[title, overview, date, href: string, tags: seq[string]]] = @[]
 for yearDir in walkDir("../articles"):
   let year = yearDir.path.split('/')[^1]
   for monthDir in walkDir(yearDir.path):
@@ -31,17 +33,26 @@ for yearDir in walkDir("../articles"):
               parsed.expand().generate()
             )
           )
-        let title = block:
+        let (title, overview, tags) = block:
           let
             stdlib = "/nim/lib"
             intr = createInterpreter(dir.path & "/" & "setting.nims", [stdlib, stdlib / "pure", stdlib / "core"])
           intr.evalScript()
           defer: intr.destroyInterpreter()
-          let sym = intr.selectUniqueSymbol("title")
-          let val = intr.getGlobalValue(sym).strVal
-          val
+          let
+            title = intr.selectUniqueSymbol("title")
+            overview = intr.selectUniqueSymbol("overview")
+            tags = intr.selectUniqueSymbol("tags")
+            titleVal = intr.getGlobalValue(title).strVal
+            overviewVal = intr.getGlobalValue(overview).strVal
+            tagsVal = intr.getGlobalValue(tags)
+          var tagsOutput: seq[string]
+          for tag in tagsVal.sons:
+            tagsOutput.add tag.strVal
+
+          (titleVal, overviewVal, tagsOutput)
         
-        pages.add (title, &"{year}/{month}/{day}/{name}.html")
+        pages.add (title, overview, &"{year}-{month}-{day}", &"{year}/{month}/{day}/{name}.html", tags)
 
 block:
   var outputFile = open(&"../dist/index.html", FileMode.fmWrite)
