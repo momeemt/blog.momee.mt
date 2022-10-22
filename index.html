@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="./assets/favicon.ico">
     <meta property="og:url" content="https://blog.momee.mt">
@@ -18,7 +21,7 @@
   <body>
     <div id="uniIndexRoot">
       <h1 class="blog-name">blog.momee.mt</h1>
-      <p class="blog-description">計算機とインディーズバンドとコントが好き、マヨネーズが苦手</p>
+      <p class="blog-description">計算機と35.7とダウ90000が好き、マヨネーズが苦手</p>
       <div class="new-article">
         <span style="background: #eee; padding: 0 20px; font-size: 18px;">
           <i class="fas fa-kiwi-bird" style="margin-right: 8px;"></i>
@@ -57,5 +60,21 @@
         <small>&copy; 2022 Mutsuha Asada</small>
       </footer>
     </div>
+    <script>
+      window.WebFontConfig = {
+        google: { families: ['Noto Sans JP'] },
+        active: function() {
+          sessionStorage.fonts = true;
+        }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+    </script>
   </body>
 </html>

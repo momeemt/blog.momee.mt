@@ -1,9 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
-
 html {
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: 300;
   background-color: #eee;
+}
+
+html * {
+  visibility: hidden;
+}
+html.wf-active * {
+  visibility: visible;
 }
 
 body {
@@ -32,6 +37,7 @@ body {
   article {
     background-color: white;
     padding: 2em 4em;
+    margin-top: 40px;
   }
 }
 @media screen and (min-width: 600px) {
@@ -44,6 +50,7 @@ body {
     background-color: white;
     border-radius: 16px;
     padding: 2em 4em;
+    margin-top: 40px;
   }
 }
 
@@ -139,7 +146,7 @@ footer small {
 }
 
 .blog-description {
-  margin: 0;
+  margin: 0 2em;
   color:gray;
   text-align: center;
   font-size: 14px;
@@ -160,7 +167,7 @@ footer small {
   max-width: 80%;
   background-color: white;
   margin: 12px 20px;
-  height: 300px;
+  height: 320px;
 }
 
 .articleCard a {
@@ -236,4 +243,27 @@ footer small {
   z-index: -1;
   width: 100%;
   margin: auto;
+}
+
+.title {
+  text-align: center;
+}
+
+.title h1 {
+  border: none;
+  font-weight: 500;
+  margin-bottom: 10px;
+  padding-bottom: 0;
+}
+
+.title_overview {
+  font-size: 14px;
+  padding: 0 1em;
+  margin: 0;
+}
+
+.title_date {
+  font-size: 14px;
+  padding: 0 1em;
+  margin: 0;
 }
