@@ -13,7 +13,7 @@
     <meta property="og:title" content="$page.title">
     <meta property="og:description" content="$page.overview">
     <meta property="og:type" content="article">
-    <meta property="og:image" content="./assets/no-image.png">
+    <meta property="og:image" content="../../../assets/no-image.png">
     <title>$page.title | blog.momee.mt</title>
   </head>
   <body>
