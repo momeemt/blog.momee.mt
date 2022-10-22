@@ -1,5 +1,5 @@
 #? stdtmpl(subsChar = '$', metaChar = '#')
-#proc generateArticleHtml(article: string): string =
+#proc generateArticleHtml(article: string, page: tuple[title, overview, date, href: string, tags: seq[string]]): string =
 #  result = ""
 
 <!DOCTYPE html>
@@ -9,7 +9,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../../../style.css" rel="stylesheet">
-    <title>blog.momee.mt</title>
+    <meta property="og:url" content="https://blog.momee.mt/$page.href">
+    <meta property="og:title" content="$page.title">
+    <meta property="og:description" content="$page.overview">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="./assets/no-image.png">
+    <title>$page.title | blog.momee.mt</title>
   </head>
   <body>
     <div id="uniArticleRoot">
