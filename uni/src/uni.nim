@@ -3,8 +3,11 @@ import std/parseopt
 import std/times
 import std/strformat
 import std/strutils
+import std/random
 
 import uni/checkDaily
+include "templates/article_setting.nims.nimf"
+include "templates/daily_setting.nims.nimf"
 
 type
   UniSubcommand = enum
@@ -16,6 +19,8 @@ type
 when isMainModule:
   if paramCount() == 0:
     quit(1)
+
+  randomize()
 
   var
     p = commandLineParams().initOptParser()
@@ -49,13 +54,25 @@ when isMainModule:
     let
       currentDir = getCurrentDir()
       articlePath = &"{currentDir}/articles/{year}/{month}/{day}/{slug}"
-    
     createDir(articlePath)
     block:
       var brack = open(&"{articlePath}/index.[]", fmReadWrite)
       brack.close()
     block:
       var setting = open(&"{articlePath}/setting.nims", fmReadWrite)
+      setting.write(articleSetting(rand(1..16)))
+      setting.close()
+  elif subcommand == usNewDaily:
+    let
+      currentDir = getCurrentDir()
+      dailyPath = &"{currentDir}/dailies/{year}/{month}/{day}"
+    createDir(dailyPath)
+    block:
+      var brack = open(&"{dailyPath}/index.[]", fmReadWrite)
+      brack.close()
+    block:
+      var setting = open(&"{dailyPath}/setting.nims", fmReadWrite)
+      setting.write(dailySetting(rand(1..16)))
       setting.close()
   elif subcommand == usCheckDaily:
     let (cond, msg) = checkDaily.check()
