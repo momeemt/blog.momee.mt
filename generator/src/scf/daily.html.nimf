@@ -1,5 +1,5 @@
 #? stdtmpl(subsChar = '$', metaChar = '#')
-#proc generateArticleHtml(article: string, page: Page): string =
+#proc generateDailyHtml(article: string, page: Page): string =
 #  result = ""
 
 <!DOCTYPE html>
@@ -17,9 +17,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link href="../../../style.css" rel="stylesheet">
+    <link href="../../../../style.css" rel="stylesheet">
     <link href="/style.css" rel="stylesheet">
-    <link rel="icon" href="/assets/favicon.ico">
+    <link rel="icon" href="../assets/favicon.ico">
     <title>$page.title | blog.momee.mt</title>
   </head>
   <body>
@@ -34,7 +34,8 @@
       </article>
       <footer>
         <div>
-          <a href="../../../index.html">記事一覧に戻る</a> | 
+          <a href="../../../../index.html">記事一覧に戻る</a> | 
+          <a href="../../../index.html">日報一覧に戻る</a> | 
           <a href="https://github.com/momeemt/blog.momee.mt" target="_blank">source</a>
         </div>
         <small>&copy; 2022 Mutsuha Asada</small>
