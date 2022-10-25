@@ -4,11 +4,14 @@ import std/times
 import std/strformat
 import std/strutils
 
+import uni/checkDaily
+
 type
   UniSubcommand = enum
     usNone
     usNewArticle
     usNewDaily
+    usCheckDaily
 
 when isMainModule:
   if paramCount() == 0:
@@ -39,6 +42,8 @@ when isMainModule:
         subcommand = usNewArticle
       of "new:daily":
         subcommand = usNewDaily
+      of "check:daily":
+        subcommand = usCheckDaily
 
   if subcommand == usNewArticle:
     let
@@ -52,3 +57,11 @@ when isMainModule:
     block:
       var setting = open(&"{articlePath}/setting.nims", fmReadWrite)
       setting.close()
+  elif subcommand == usCheckDaily:
+    let (cond, msg) = checkDaily.check()
+    if cond:
+      echo msg
+      quit(0)
+    else:
+      stderr.writeLine msg
+      quit(1)
