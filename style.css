@@ -152,7 +152,8 @@ footer small {
   font-size: 14px;
 }
 
-.articleCards {
+.articleCards,
+.dailyCards {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -168,6 +169,11 @@ footer small {
   background-color: white;
   margin: 12px 20px;
   height: 320px;
+}
+
+.dailyCards .articleCard {
+  height: 250px;
+  width: 350px;
 }
 
 .articleCard a {
@@ -190,6 +196,10 @@ footer small {
   border-radius: 15px 15px 0 0;
   -o-object-fit: cover;
   object-fit: cover;
+}
+
+.dailyCards .articleCard__thumbnail {
+  height: 55%;
 }
 
 .articleCard__body {
