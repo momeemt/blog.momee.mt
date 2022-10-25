@@ -3,3 +3,4 @@ let
   overview* = "タルタルソースはギリギリ食べられる"
   tags* = @["ブログ"]
   thumbnail* = 2
+  publish* = true
