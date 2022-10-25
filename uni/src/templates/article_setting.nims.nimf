@@ -6,3 +6,4 @@ let
   overview* = ""
   thumbnail* = $thumbnailNumber
   tags*: seq[string] = @[]
+  publish* = false

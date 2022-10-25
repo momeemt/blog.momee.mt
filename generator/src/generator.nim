@@ -26,7 +26,7 @@ for (dayInDir, year, month, day) in dateInDir("../articles"):
       overview = intr.getString("overview")
       thumbnail = intr.getInt("thumbnail")
       tags = intr.getSeqString("tags")
-
+      publish = intr.getBool("publish")
       page = (
         title,
         overview,
@@ -37,6 +37,9 @@ for (dayInDir, year, month, day) in dateInDir("../articles"):
       )
     
     defer: intr.destroy()
+
+    if not publish:
+      continue
 
     block:
       createDir(&"../dist/{year}/{month}/{day}/")
@@ -58,6 +61,7 @@ for (dir, year, month, day) in dateInDir("../dailies"):
     intr = getInterpreter(dir.path & "/setting.nims")
     overview = intr.getString("overview")
     thumbnail = intr.getInt("thumbnail")
+    publish = intr.getBool("publish")
     page: Page = (
       &"{year}.{month}.{day}",
       overview,
@@ -66,6 +70,9 @@ for (dir, year, month, day) in dateInDir("../dailies"):
       &"{thumbnail}.png",
       @[]
     )
+  
+  if not publish:
+    continue
   
   defer: intr.destroy()
 

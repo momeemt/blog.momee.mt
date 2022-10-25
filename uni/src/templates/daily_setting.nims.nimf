@@ -4,3 +4,4 @@
 let
   overview* = ""
   thumbnail* = $thumbnailNumber # 1〜16
+  publish* = false
