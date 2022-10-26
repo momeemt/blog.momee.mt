@@ -94,7 +94,7 @@ block:
   var outputFile = open(&"../dist/index.html", FileMode.fmWrite)
   defer: outputFile.close()
   outputFile.write(
-    generateIndexHtml(pages.reversed)
+    generateIndexHtml(pages.sorted.reversed)
   )
 
 block:
@@ -102,5 +102,5 @@ block:
   var outputFile = open(&"../dist/daily/index.html", FileMode.fmWrite)
   defer: outputFile.close()
   outputFile.write(
-    generateDailyIndexHtml(dailies.reversed)
+    generateDailyIndexHtml(dailies.sorted.reversed)
   )

@@ -1,5 +1,6 @@
 import std/os
 import std/strutils
+import std/algorithm
 import compiler/nimeval
 import compiler/renderer
 import compiler/ast
@@ -12,6 +13,12 @@ type
     href: string
     thumbnail: string
     tags: seq[string]
+
+func cmpPage (x, y: Page): int =
+  result = system.cmp(x.date, y.date)
+
+func sorted* (page: seq[Page]): seq[Page] =
+  result = page.sorted(cmpPage)
 
 iterator dateInDir* (path: string): tuple[dir: tuple[kind: PathComponent, path: string], year, month, day: string] =
   for yearInDir in walkDir(path):
