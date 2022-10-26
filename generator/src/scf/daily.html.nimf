@@ -12,7 +12,7 @@
     <meta property="og:title" content="$page.title | blog.momee.mt">
     <meta property="og:description" content="$page.overview">
     <meta property="og:type" content="article">
-    <meta property="og:image" content="https://blog.momee.mt/assets/no-image.png">
+    <meta property="og:image" content="https://blog.momee.mt/assets/$page.thumbnail">
     <meta property="og:site_name" content="blog.momee.mt">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
