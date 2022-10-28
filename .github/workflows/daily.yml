@@ -24,11 +24,13 @@ jobs:
           echo "YEAR=`date "+%Y"`" >> $GITHUB_ENV
           echo "MONTH=`date "+%m"`" >> $GITHUB_ENV
           echo "DAY=`date "+%d"`" >> $GITHUB_ENV
+      - name: debug
+        run: git branch
       - name: Create new branch
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git switch -c daily/${{ env.YEAR }}-${{ env.MONTH }}-${{ env.DAY }}
+          git switch daily/${{ env.YEAR }}-${{ env.MONTH }}-${{ env.DAY }} || git switch -c daily/${{ env.YEAR }}-${{ env.MONTH }}-${{ env.DAY }}
           git push -u origin daily/${{ env.YEAR }}-${{ env.MONTH }}-${{ env.DAY }}
       - run: docker-compose build
       - run: docker-compose up -d
