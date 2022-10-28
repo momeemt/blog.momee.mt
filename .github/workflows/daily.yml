@@ -28,8 +28,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git switch -c daily/${{ env.YEAR }}-${{ env.MONTH }}-${{ env.DAY }}"
-          git push -u origin daily/${{ env.YEAR }}-${{ env.MONTH }}-${{ env.DAY }}"
+          git switch -c daily/${{ env.YEAR }}-${{ env.MONTH }}-${{ env.DAY }}
+          git push -u origin daily/${{ env.YEAR }}-${{ env.MONTH }}-${{ env.DAY }}
       - run: docker-compose build
       - run: docker-compose up -d
       - run: docker-compose exec -it blog.momee.mt bash -c "cd uni && nimble build && ./bin/uni new:daily"
