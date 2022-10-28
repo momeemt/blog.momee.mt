@@ -1,9 +1,8 @@
 name: Daily
 
 on:
-  push:
   schedule:
-    - cron: '02 14 * * *'
+    - cron: '00 15 * * *'
 
   workflow_dispatch:
 
@@ -15,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      # - uses: satackey/action-docker-layer-caching@v0.0.11
+      - uses: satackey/action-docker-layer-caching@v0.0.11
         continue-on-error: true
       - name: Set current datetime as env variable
         env:
