@@ -33,7 +33,10 @@ jobs:
           git push -u origin daily/${{ env.YEAR }}-${{ env.MONTH }}-${{ env.DAY }}
       - run: docker-compose build
       - run: docker-compose up -d
-      - run: docker-compose exec -T blog.momee.mt bash -c "cd uni && nimble build && cd ../ && ./uni/bin/uni new:daily"
+      - name: Generate Daily
+        env:
+          TZ: 'Asia/Tokyo'
+        run: docker-compose exec -T blog.momee.mt bash -c "cd uni && nimble build && cd ../ && ./uni/bin/uni new:daily"
       - name: Push
         uses: s0/git-publish-subdir-action@develop
         env:
