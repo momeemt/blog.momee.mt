@@ -1,6 +1,7 @@
 name: Create a pull request for daily
 
 on:
+  push:
   schedule:
     - cron: '02 14 * * *'
 
