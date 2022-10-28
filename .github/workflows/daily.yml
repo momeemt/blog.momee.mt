@@ -2,7 +2,7 @@ name: Create a pull request for daily
 
 on:
   schedule:
-    - cron: '57 13 * * *'
+    - cron: '02 14 * * *'
 
   workflow_dispatch:
 
