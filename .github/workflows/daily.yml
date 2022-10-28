@@ -23,7 +23,7 @@ jobs:
           echo "DAY=`date "+%d"`" >> $GITHUB_ENV
       - run: docker-compose build
       - run: docker-compose up -d
-      - run: docker-compose exec -T blog.momee.mt cd uni && nimble build && ./bin/uni new:daily
+      - run: docker-compose exec -it blog.momee.mt bash -c "cd uni && nimble build && ./bin/uni new:daily"
       - name: Push
         uses: s0/git-publish-subdir-action@develop
         env:
