@@ -18,9 +18,9 @@ jobs:
       - uses: satackey/action-docker-layer-caching@v0.0.11
         continue-on-error: true
       - run: |
-          echo "YEAR=${date "+%Y"}" >> $GITHUB_ENV
-          echo "MONTH=${date "+%m"}" >> $GITHUB_ENV
-          echo "DAY=${date "+%d"}" >> $GITHUB_ENV
+          echo "YEAR=`date "+%Y"`" >> $GITHUB_ENV
+          echo "MONTH=`date "+%m"`" >> $GITHUB_ENV
+          echo "DAY=`date "+%d"`" >> $GITHUB_ENV
       - run: docker-compose build
       - run: docker-compose up -d
       - run: docker-compose exec -T blog.momee.mt cd uni && nimble build && ./bin/uni new:daily
