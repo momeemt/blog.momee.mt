@@ -14,6 +14,8 @@ permissions:
 jobs:
   create-pr:
     runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v3
       - uses: satackey/action-docker-layer-caching@v0.0.11
@@ -34,5 +36,5 @@ jobs:
           git switch daily/${{ env.YEAR }}-${{ env.MONTH }}-${{ env.DAY }}
           docker-compose build
           docker-compose up -d
-          docker-compose exec -T blog.momee.mt bash -c "cd uni && nimble build && cd ../ && git config --global --add safe.directory /workspace && git branch && ./uni/bin/uni check:daily"
+          docker-compose exec -T blog.momee.mt bash -c "cd uni && nimble build && cd ../ && git config --global --add safe.directory /workspace && ./uni/bin/uni check:daily"
           gh pr create -B main -t ${{ env.PR_TITLE }} -b ""
