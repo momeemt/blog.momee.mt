@@ -34,5 +34,5 @@ jobs:
           git switch daily/${{ env.YEAR }}-${{ env.MONTH }}-${{ env.DAY }}
           docker-compose build
           docker-compose up -d
-          docker-compose exec -T blog.momee.mt bash -c "cd uni && nimble build && cd ../ && git branch && ./uni/bin/uni check:daily"
+          docker-compose exec -T blog.momee.mt bash -c "cd uni && nimble build && cd ../ && git config --global --add safe.directory /workspace && git branch && ./uni/bin/uni check:daily"
           gh pr create -B main -t ${{ env.PR_TITLE }} -b ""
