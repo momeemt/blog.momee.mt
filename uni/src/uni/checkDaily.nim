@@ -5,7 +5,7 @@ import std/strformat
 
 proc check*: tuple[cond: bool, msg: string] =
   var (branchName, _) = execCmdEx("git rev-parse --abbrev-ref @")
-  if not branchName.startsWith("daily-"):
+  if not branchName.startsWith("daily/"):
     return (false, "you need to be in daily branch")
 
   branchName = branchName[6..^2]
