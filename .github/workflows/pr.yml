@@ -1,4 +1,4 @@
-name: Daily
+name: Pull Request
 
 on:
   push:
@@ -21,8 +21,8 @@ jobs:
         run: |
           echo "YEAR=`date "+%Y"`" >> $GITHUB_ENV
           echo "MONTH=`date "+%m"`" >> $GITHUB_ENV
-          echo "DAY=`date -v-1d "+%d"`" >> $GITHUB_ENV
-          echo "PR_TITLE=\"Add: Daily of $YEAR-$MONTH-$DAY\""
+          echo "DAY=`date --date "-1 days" "+%d"`" >> $GITHUB_ENV
+          echo "PR_TITLE=\"Add: Daily of $YEAR-$MONTH-$DAY\"" >> $GITHUB_ENV
       - name: Checkout
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
