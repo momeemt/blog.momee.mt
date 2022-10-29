@@ -15,7 +15,7 @@ jobs:
   create-pr:
     runs-on: ubuntu-latest
     env:
-      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
     steps:
       - uses: actions/checkout@v3
       - uses: satackey/action-docker-layer-caching@v0.0.11
@@ -30,7 +30,7 @@ jobs:
           echo "PR_TITLE=\"Add: Daily of $YEAR-$MONTH-$DAY\"" >> $GITHUB_ENV
       - name: Checkout
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         run: |
           git pull origin daily/${{ env.YEAR }}-${{ env.MONTH }}-${{ env.DAY }} || true
           git switch daily/${{ env.YEAR }}-${{ env.MONTH }}-${{ env.DAY }}
