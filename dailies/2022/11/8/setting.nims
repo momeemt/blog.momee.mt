@@ -1,4 +1,4 @@
 let
-  overview* = ""
+  overview* = "Strapi、Raspiのアナグラムかと思った"
   thumbnail* = 13 # 1〜16
-  publish* = false
+  publish* = true
