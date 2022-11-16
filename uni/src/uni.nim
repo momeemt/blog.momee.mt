@@ -49,6 +49,9 @@ when isMainModule:
         subcommand = usNewDaily
       of "check:daily":
         subcommand = usCheckDaily
+  
+  if day.len == 1:
+    day = '0' & day
 
   if subcommand == usNewArticle:
     let
