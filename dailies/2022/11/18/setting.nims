@@ -1,4 +1,4 @@
 let
-  overview* = ""
+  overview* = "新規性がない"
   thumbnail* = 5 # 1〜16
-  publish* = false
+  publish* = true
