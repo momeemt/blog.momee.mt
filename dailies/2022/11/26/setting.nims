@@ -1,4 +1,4 @@
 let
-  overview* = ""
+  overview* = "ウルコンへ"
   thumbnail* = 11 # 1〜16
-  publish* = false
+  publish* = true
