@@ -31,7 +31,7 @@ iterator dateInDir* (path: string): tuple[dir: tuple[kind: PathComponent, path: 
 
 proc getInterpreter* (path: string): Interpreter =
   when defined(macosx):
-    let stdlib = "/opt/homebrew/Cellar/nim/1.6.6/nim/lib/"
+    let stdlib = "/opt/homebrew/Cellar/nim/1.6.8/nim/lib/"
     # let stdlib = "/Users/momeemt-macbook/.choosenim/toolchains/nim-1.6.8/lib/"
   else:
     let stdlib = "/nim/lib"
