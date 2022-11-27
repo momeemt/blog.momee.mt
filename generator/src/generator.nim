@@ -43,6 +43,8 @@ for (dayInDir, year, month, day) in dateInDir("../articles"):
 
     block:
       createDir(&"../dist/{year}/{month}/{day}/")
+      for assets in walkFiles(dir.path / "assets"):
+        copyFile(assets, &"../dist/{year}/{month}/{day}/")
       var outputFile = open(&"../dist/{year}/{month}/{day}/{name}.html", FileMode.fmWrite)
       defer: outputFile.close()
       let parsed = tokenize(dir.path & "/index.[]").parse()
@@ -78,6 +80,9 @@ for (dir, year, month, day) in dateInDir("../dailies"):
 
   block:
     createDir(&"../dist/daily/{year}/{month}/{day}/")
+    for assets in walkDir(dir.path / "assets/"):
+      let name = $assets.path.split('/')[^1]
+      copyFile(assets.path, &"../dist/daily/{year}/{month}/{day}/{name}")
     var outputFile = open(&"../dist/daily/{year}/{month}/{day}/daily.html", FileMode.fmWrite)
     defer: outputFile.close()
     let parsed = tokenize(dir.path & "/index.[]").parse()
