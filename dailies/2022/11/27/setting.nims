@@ -1,4 +1,4 @@
 let
-  overview* = ""
+  overview* = "シチューをつくった！"
   thumbnail* = 10 # 1〜16
-  publish* = false
+  publish* = true
