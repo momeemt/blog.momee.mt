@@ -103,6 +103,10 @@ sup a {
   text-decoration: none;
 }
 
+article img {
+  width: 100%;
+}
+
 .footnote_ordered-list:target {
   background-color: #edd;
 }
