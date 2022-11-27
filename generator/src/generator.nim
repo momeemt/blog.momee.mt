@@ -45,7 +45,7 @@ for (dayInDir, year, month, day) in dateInDir("../articles"):
       createDir(&"../dist/{year}/{month}/{day}/")
       var outputFile = open(&"../dist/{year}/{month}/{day}/{name}.html", FileMode.fmWrite)
       defer: outputFile.close()
-      let parsed = lex(dir.path & "/index.[]").parse()
+      let parsed = tokenize(dir.path & "/index.[]").parse()
       outputFile.write(
         generateArticleHtml(
           parsed.expand().generate(),
@@ -80,7 +80,7 @@ for (dir, year, month, day) in dateInDir("../dailies"):
     createDir(&"../dist/daily/{year}/{month}/{day}/")
     var outputFile = open(&"../dist/daily/{year}/{month}/{day}/daily.html", FileMode.fmWrite)
     defer: outputFile.close()
-    let parsed = lex(dir.path & "/index.[]").parse()
+    let parsed = tokenize(dir.path & "/index.[]").parse()
     outputFile.write(
       generateDailyHtml(
         parsed.expand().generate(),
