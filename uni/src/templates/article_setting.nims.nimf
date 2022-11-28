@@ -1,9 +1,0 @@
-#? stdtmpl(subsChar = '$', metaChar = '#')
-#proc articleSetting(thumbnailNumber: int): string =
-#  result = ""
-let
-  title* = ""
-  overview* = ""
-  thumbnail* = $thumbnailNumber
-  tags*: seq[string] = @[]
-  publish* = false

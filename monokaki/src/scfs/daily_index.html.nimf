@@ -1,5 +1,5 @@
 #? stdtmpl(subsChar = '$', metaChar = '#')
-#proc generateIndexHtml(pages: seq[Page]): string =
+#proc generateDailyIndexHtml(pages: seq[Page]): string =
 #  result = ""
 
 <!DOCTYPE html>
@@ -8,51 +8,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
+    <link href="../style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="icon" href="./assets/favicon.ico">
+    <link rel="icon" href="/assets/favicon.ico">
     <meta property="og:url" content="https://blog.momee.mt">
-    <meta property="og:title" content="blog.momee.mt">
+    <meta property="og:title" content="日報 | blog.momee.mt">
     <meta property="og:description" content="momeemtのブログ">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://blog.momee.mt/assets/1.png">
-    <title>blog.momee.mt</title>
+    <meta property="og:image" content="https://blog.momee.mt/assets/no-image.png">
+    <title>日報 | blog.momee.mt</title>
   </head>
   <body>
     <div id="uniIndexRoot">
-      <h1 class="blog-name">blog.momee.mt</h1>
-      <p class="blog-description">計算機と35.7とダウ90000が好き、マヨネーズが苦手</p>
+      <h1 class="blog-name">blog.momee.mt/daily</h1>
+      <p class="blog-description">野菜ジュースでほんのり生活水準を上げている</p>
       <div class="new-article">
         <span style="background: #eee; padding: 0 20px; font-size: 18px;">
           <i class="fas fa-kiwi-bird" style="margin-right: 8px;"></i>
-          新しい記事
+          新しい日報
         </span>
       </div>
       <div>
-        <div class="articleCards">
+        <div class="dailyCards">
         #for page in pages:
           <div class="articleCard">
             <a href="$page.href">
-              <img class="articleCard__thumbnail" alt="no image of the article" src="./assets/$page.thumbnail" />
+              <img class="articleCard__thumbnail" alt="no image of the article" src="../assets/$page.thumbnail" />
               <div class="articleCard__body">
                 <h3 class="articleCard__body--title">
                   $page.title
                 </h3>
                 <p class="articleCard__body--overview">
                   $page.overview
-                </p>
-                <div class="articleCard__body--tags">
-                #for tag in page.tags:
-                  <span class="articleCard__body--tag">
-                    $tag
-                  </span>
-                #end for
-                </div>
-                <p class="articleCard__body--date">
-                  $page.date
                 </p>
               </div>
             </a>
@@ -62,7 +52,7 @@
       </div>
       <footer>
         <div>
-          <a href="./daily/index.html">日報一覧</a> | 
+          <a href="../index.html">記事一覧</a> | 
           <a href="https://github.com/momeemt/blog.momee.mt" target="_blank">source</a>
         </div>
         <small>&copy; 2022 Mutsuha Asada</small>
@@ -83,6 +73,18 @@
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(wf, s);
       })();
+      async function subscribe() {
+        fetch('http://localhost:3000/poll')
+        .then((res) => {
+          if (res.status === 200) {
+            location.reload()
+          }
+        })
+        .catch((e) => {
+          console.error(e)
+        })
+      }
+      subscribe();
     </script>
   </body>
 </html>

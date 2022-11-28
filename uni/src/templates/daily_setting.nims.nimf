@@ -1,7 +1,0 @@
-#? stdtmpl(subsChar = '$', metaChar = '#')
-#proc dailySetting(thumbnailNumber: int): string =
-#  result = ""
-let
-  overview* = ""
-  thumbnail* = $thumbnailNumber # 1〜16
-  publish* = false
