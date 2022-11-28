@@ -80,6 +80,7 @@ proc preview () =
     for client in clients:
       let headers = {"Content-type": "application/json; charset=utf-8"}
       await client.respond(Http200, $(%*{ "status": "ok" }), headers.newHttpHeaders())
+    clients = @[]
 
   wd.add(
     "../dailies",
