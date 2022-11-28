@@ -1,9 +1,0 @@
-#? stdtmpl(subsChar = '$', metaChar = '#')
-#proc dailySettingsToml(thumbnailNumber: int): string =
-#  result = ""
-version = "0.0.1"
-
-[blog]
-overview = ""
-thumbnail = $thumbnailNumber
-published = false
