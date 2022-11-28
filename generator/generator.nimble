@@ -12,7 +12,6 @@ bin           = @["generator"]
 # Dependencies
 
 requires "nim >= 1.6.6"
-requires "compiler"
 requires "https://github.com/momeemt/brack"
 requires "parsetoml == 0.6.0"
 # requires "brack#head"

@@ -4,9 +4,12 @@ initBrack()
 import std/os
 import std/strformat
 import std/strutils
+import std/sequtils
 import std/algorithm
-import compiler/renderer
+import std/sugar
+
 import generator/utils
+import parsetoml
 
 include "scf/index.html.nimf"
 include "scf/daily_index.html.nimf"
@@ -18,15 +21,16 @@ os.copyDir("./src/assets/", "../dist/assets/")
 
 var pages: seq[Page] = @[]
 for (dayInDir, year, month, day) in dateInDir("../articles"):
+  echo (dayInDir, year, month, day)
   for dir in walkDir(dayInDir.path):
     let
       name = dir.path.split('/')[^1]
-      intr = getInterpreter(dir.path & "/setting.nims")
-      title = intr.getString("title")
-      overview = intr.getString("overview")
-      thumbnail = intr.getInt("thumbnail")
-      tags = intr.getSeqString("tags")
-      publish = intr.getBool("publish")
+      toml = parsetoml.parseFile(dir.path / "settings.toml")
+      title = toml["blog"]["title"].getStr()
+      overview = toml["blog"]["overview"].getStr()
+      tags = toml["blog"]["tags"].getElems().map(t => t.getStr())
+      thumbnail = toml["blog"]["thumbnail"].getInt()
+      published = toml["blog"]["published"].getBool()
       page = (
         title,
         overview,
@@ -35,10 +39,8 @@ for (dayInDir, year, month, day) in dateInDir("../articles"):
         &"{thumbnail}.png",
         tags
       )
-    
-    defer: intr.destroy()
 
-    if not publish:
+    if not published:
       continue
 
     block:
@@ -47,7 +49,7 @@ for (dayInDir, year, month, day) in dateInDir("../articles"):
         copyFile(assets, &"../dist/{year}/{month}/{day}/")
       var outputFile = open(&"../dist/{year}/{month}/{day}/{name}.html", FileMode.fmWrite)
       defer: outputFile.close()
-      let parsed = tokenize(dir.path & "/index.[]").parse()
+      let parsed = tokenize(dir.path / "index.[]").parse()
       outputFile.write(
         generateArticleHtml(
           parsed.expand().generate(),
@@ -60,10 +62,10 @@ for (dayInDir, year, month, day) in dateInDir("../articles"):
 var dailies: seq[Page] = @[]
 for (dir, year, month, day) in dateInDir("../dailies"):
   let
-    intr = getInterpreter(dir.path & "/setting.nims")
-    overview = intr.getString("overview")
-    thumbnail = intr.getInt("thumbnail")
-    publish = intr.getBool("publish")
+    toml = parsetoml.parseFile(dir.path / "settings.toml")
+    overview = toml["blog"]["overview"].getStr()
+    thumbnail = toml["blog"]["thumbnail"].getInt()
+    published = toml["blog"]["published"].getBool()
     page: Page = (
       &"{year}.{month}.{day}",
       overview,
@@ -73,10 +75,8 @@ for (dir, year, month, day) in dateInDir("../dailies"):
       @[]
     )
   
-  if not publish:
+  if not published:
     continue
-  
-  defer: intr.destroy()
 
   block:
     createDir(&"../dist/daily/{year}/{month}/{day}/")
