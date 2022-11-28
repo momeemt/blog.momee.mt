@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "一日がかりの大掃除"
+thumbnail = 10 # 1〜16
+published = true

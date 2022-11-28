@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "俺は揚げ物の王になる"
+thumbnail = 10 # 1〜16
+published = true

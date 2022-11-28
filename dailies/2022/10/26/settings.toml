@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "布団から脱するのに2時間くらいかかっている"
+thumbnail = 4 # 1〜16
+published = true

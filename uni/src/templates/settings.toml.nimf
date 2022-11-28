@@ -1,0 +1,11 @@
+#? stdtmpl(subsChar = '$', metaChar = '#')
+#proc settingsToml(thumbnailNumber: int): string =
+#  result = ""
+[blog]
+title = ""
+type = "article"
+overview = ""
+category = ""
+tags = []
+thumbnail = $thumbnailNumber # 1〜16
+published = false

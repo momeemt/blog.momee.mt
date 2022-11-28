@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "「すずめの戸締まり」を観た"
+thumbnail = 14 # 1〜16
+published = true
