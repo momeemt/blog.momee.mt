@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="icon" href="../assets/favicon.ico">
+    <link rel="icon" href="/assets/favicon.ico">
     <meta property="og:url" content="https://blog.momee.mt">
     <meta property="og:title" content="日報 | blog.momee.mt">
     <meta property="og:description" content="momeemtのブログ">
@@ -510,6 +510,18 @@
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(wf, s);
       })();
+      async function subscribe() {
+        fetch('http://localhost:3000/poll')
+        .then((res) => {
+          if (res.status === 200) {
+            location.reload()
+          }
+        })
+        .catch((e) => {
+          console.error(e)
+        })
+      }
+      subscribe();
     </script>
   </body>
 </html>

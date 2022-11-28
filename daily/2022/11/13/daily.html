@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="../../../../style.css" rel="stylesheet">
     <link href="/style.css" rel="stylesheet">
-    <link rel="icon" href="../assets/favicon.ico">
+    <link rel="icon" href="/assets/favicon.ico">
     <title>2022.11.13 | blog.momee.mt</title>
   </head>
   <body>
@@ -52,6 +52,18 @@
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(wf, s);
       })();
+      async function subscribe() {
+        fetch('http://localhost:3000/poll')
+        .then((res) => {
+          if (res.status === 200) {
+            location.reload()
+          }
+        })
+        .catch((e) => {
+          console.error(e)
+        })
+      }
+      subscribe();
     </script>
   </body>
 </html>
