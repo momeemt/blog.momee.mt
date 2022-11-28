@@ -17,12 +17,13 @@ include "../scfs/article.html.nimf"
 include "../scfs/daily.html.nimf"
 
 proc build* () =
-  createDir(&"../dist")
-  os.copyFile("./src/css/style.css", "../dist/style.css")
-  os.copyDir("./src/assets/", "../dist/assets/")
+  let currentDir = getCurrentDir()
+  createDir(currentDir / "dist")
+  os.copyFile("./src/css/style.css", currentDir / "dist/style.css")
+  os.copyDir("./src/assets/", currentDir / "dist/assets/")
 
   var pages: seq[Page] = @[]
-  for (dayInDir, year, month, day) in dateInDir("../articles"):
+  for (dayInDir, year, month, day) in dateInDir(currentDir / "articles"):
     for dir in walkDir(dayInDir.path):
       let
         name = dir.path.split('/')[^1]
@@ -45,10 +46,10 @@ proc build* () =
         continue
 
       block:
-        createDir(&"../dist/{year}/{month}/{day}/")
+        createDir(currentDir / &"dist/{year}/{month}/{day}/")
         for assets in walkFiles(dir.path / "assets"):
-          copyFile(assets, &"../dist/{year}/{month}/{day}/")
-        var outputFile = open(&"../dist/{year}/{month}/{day}/{name}.html", FileMode.fmWrite)
+          copyFile(assets, currentDir / &"dist/{year}/{month}/{day}/")
+        var outputFile = open(currentDir / &"dist/{year}/{month}/{day}/{name}.html", FileMode.fmWrite)
         defer: outputFile.close()
         let parsed = tokenize(dir.path / "index.[]").parse()
         outputFile.write(
@@ -61,7 +62,7 @@ proc build* () =
       pages.add page
 
   var dailies: seq[Page] = @[]
-  for (dir, year, month, day) in dateInDir("../dailies"):
+  for (dir, year, month, day) in dateInDir(currentDir / "dailies"):
     let
       toml = parsetoml.parseFile(dir.path / "settings.toml")
       overview = toml["blog"]["overview"].getStr()
@@ -80,11 +81,11 @@ proc build* () =
       continue
 
     block:
-      createDir(&"../dist/daily/{year}/{month}/{day}/")
+      createDir(currentDir / &"dist/daily/{year}/{month}/{day}/")
       for assets in walkDir(dir.path / "assets/"):
         let name = $assets.path.split('/')[^1]
-        copyFile(assets.path, &"../dist/daily/{year}/{month}/{day}/{name}")
-      var outputFile = open(&"../dist/daily/{year}/{month}/{day}/daily.html", FileMode.fmWrite)
+        copyFile(assets.path, currentDir / &"dist/daily/{year}/{month}/{day}/{name}")
+      var outputFile = open(currentDir / &"dist/daily/{year}/{month}/{day}/daily.html", FileMode.fmWrite)
       defer: outputFile.close()
       let parsed = tokenize(dir.path & "/index.[]").parse()
       outputFile.write(
@@ -97,15 +98,15 @@ proc build* () =
     dailies.add page
 
   block:
-    var outputFile = open(&"../dist/index.html", FileMode.fmWrite)
+    var outputFile = open(currentDir / &"dist/index.html", FileMode.fmWrite)
     defer: outputFile.close()
     outputFile.write(
       generateIndexHtml(pages.sorted.reversed)
     )
 
   block:
-    createDir(&"../dist/daily/")
-    var outputFile = open(&"../dist/daily/index.html", FileMode.fmWrite)
+    createDir(currentDir / &"dist/daily/")
+    var outputFile = open(currentDir / &"dist/daily/index.html", FileMode.fmWrite)
     defer: outputFile.close()
     outputFile.write(
       generateDailyIndexHtml(dailies.sorted.reversed)

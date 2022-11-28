@@ -60,7 +60,7 @@ proc preview () =
                     of "css": {"Content-type": "text/css; charset=utf-8"}
                     else: {"Content-type": "text/plain; charset=utf-8"}
       let html = block:
-        let f = open("../dist" & req.url.path)
+        let f = open(getCurrentDir() / "dist" & req.url.path)
         defer: f.close()
         f.readAll
       await req.respond(Http200, html, headers.newHttpHeaders())
