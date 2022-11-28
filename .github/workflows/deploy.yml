@@ -14,11 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: satackey/action-docker-layer-caching@v0.0.11
-        continue-on-error: true
-      - run: docker-compose build
-      - run: docker-compose up -d
-      - run: docker-compose exec -T blog.momee.mt nimble generate
+      - uses: jiro4989/setup-nim-action@v1
+      - run: nimble generate
       - name: Push
         uses: s0/git-publish-subdir-action@develop
         env:
