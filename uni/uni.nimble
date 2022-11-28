@@ -12,3 +12,4 @@ bin           = @["uni"]
 # Dependencies
 
 requires "nim >= 1.6.6"
+requires "cligen == 1.5.32"
