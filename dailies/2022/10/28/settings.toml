@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "微積に出席したのがスーパーえらかった"
+thumbnail = 16 # 1〜16
+published = true

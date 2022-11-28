@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "はんだごてを振り回せ"
+thumbnail = 13 # 1〜16
+published = true

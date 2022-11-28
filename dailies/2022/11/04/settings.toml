@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "チャーシューは正義"
+thumbnail = 9 # 1〜16
+published = true

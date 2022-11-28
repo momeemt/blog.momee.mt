@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "虚無"
+thumbnail = 8 # 1〜16
+published = true

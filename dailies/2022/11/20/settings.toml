@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "計画性は一度失うと戻らない"
+thumbnail = 9 # 1〜16
+published = true

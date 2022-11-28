@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "Strapi、Raspiのアナグラムかと思った"
+thumbnail = 13 # 1〜16
+published = true

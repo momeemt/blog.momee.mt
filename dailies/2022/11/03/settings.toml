@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "みんなでワイワイ開発したい"
+thumbnail = 14 # 1〜16
+published = true
