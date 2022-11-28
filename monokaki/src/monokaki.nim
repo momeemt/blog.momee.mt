@@ -8,7 +8,7 @@ import std/asynchttpserver
 import std/json
 import nwatchdog
 
-import uni/builder
+import monokaki/builder
 
 include "scfs/article.settings.toml.nimf"
 include "scfs/daily.settings.toml.nimf"
@@ -84,6 +84,12 @@ proc preview () =
 
   wd.add(
     "../dailies",
+    "[\\w\\W]*\\.(\\[\\]|toml)",
+    callback,
+    "transpiled brack"
+  )
+  wd.add(
+    "../articles",
     "[\\w\\W]*\\.(\\[\\]|toml)",
     callback,
     "transpiled brack"

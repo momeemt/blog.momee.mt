@@ -2,11 +2,11 @@
 
 version       = "0.1.0"
 author        = "Mutsuha Asada"
-description   = "the cli for momeemt's blog"
+description   = "the blog generator and manager"
 license       = "Apache-2.0"
 srcDir        = "src"
 binDir        = "bin"
-bin           = @["uni"]
+bin           = @["monokaki"]
 
 
 # Dependencies
