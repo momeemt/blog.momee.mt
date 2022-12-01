@@ -1,0 +1,8 @@
+version = "0.0.1"
+
+[blog]
+title = "2022年 ふりかえり"
+overview = "今年もあっという間に過ぎ去った"
+tags = ["近況"]
+thumbnail = 13
+published = false
