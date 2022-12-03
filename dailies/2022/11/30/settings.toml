@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "研究不適合者"
+thumbnail = 12
+published = true
