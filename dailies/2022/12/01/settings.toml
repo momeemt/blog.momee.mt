@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "12月が来た、それも無断で"
+thumbnail = 7
+published = true
