@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "選択の権利を噛み締めた"
+thumbnail = 7
+published = true
