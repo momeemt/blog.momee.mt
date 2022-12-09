@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "イルミネーションを見た"
+thumbnail = 14
+published = true
