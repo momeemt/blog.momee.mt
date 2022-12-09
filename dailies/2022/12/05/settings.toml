@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "Nimコンパイラを読み始めた"
+thumbnail = 7
+published = true
