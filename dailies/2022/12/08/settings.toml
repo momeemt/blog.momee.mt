@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "口内炎を撲滅したい"
+thumbnail = 6
+published = true
