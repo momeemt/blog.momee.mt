@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "ハッカソンに出た（1日目）"
+thumbnail = 10
+published = true
