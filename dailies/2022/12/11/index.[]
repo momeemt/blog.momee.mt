@@ -1,0 +1,15 @@
+{* 感想}
+
+\<blockquote class="twitter-tweet">\<p lang="ja" dir="ltr">👑🦁最優秀賞🦁👑\<a href="https://twitter.com/hashtag/%E6%8A%80%E8%82%B2CAMP?src=hash&amp;ref_src=twsrc%5Etfw">#技育CAMP\</a> \<a href="https://twitter.com/hashtag/%E3%83%8F%E3%83%83%E3%82%AB%E3%82%BD%E3%83%B3?src=hash&amp;ref_src=twsrc%5Etfw">#ハッカソン\</a> vol.9🎉\<br>テーマ「はじめてのハッカソン」\<br>\<br>栄えある👑最優秀賞👑は、\<br>チーム【ハッカ容器】\<br>作品： ギリギリ飯\<br>\<br>🎊🎊🎊受賞おめでとうございます🎊🎊🎊 \<a href="https://t.co/XzrW0XAJdl">pic.twitter.com/XzrW0XAJdl\</a>\</p>&mdash; 【公式】技育プロジェクト (@geek_pjt) \<a href="https://twitter.com/geek_pjt/status/1601870885883109376?ref_src=twsrc%5Etfw">December 11, 2022\</a>\</blockquote> \<script async src="https://platform.twitter.com/widgets.js" charset="utf-8">\</script>
+
+なんかハッカソン優勝してしまった。そんなことある？
+
+今回ほとんどコードを書いてなくて、Beatさんがフロントを書いてタカバヤPがGoを書いて、デザイン、ロゴ、発表準備と発表を僕がやる感じだった。
+デザイン面白そうだけど個人的な優先度は低かったので色々触ったり考えたりできたのはよかった。あとチームメンバーが自律的に動けて役割分担がきちんとできている（これは前日までの準備に熱心に取り組んでいた2人と対照的に僕はメンタルが終わって停止していて、残っていたやることをやっただけなんだけど。とはいえ楽しかったので結果オーライだった）というのも良かった。
+
+リモート寿司で打ち上げかなあとか楽しく話した。
+ハッカソン、結構しんどいので定期的に出るのは辛いけど半年に一回くらいのペースなら十分楽しんでられるので次はjsysが無事に終わったらcoinsの友達とか誘って大きめの大会出てみたいかなあ。HackDayとか。ポピポポピピプピリロピロリププププピーポの衝撃が強くて...
+
+[@ ギリギリ飯のリポジトリ, https://github.com/momeemt/girigiri-meshi]
+
+次出るとしたら技術的には〜〜どうだろう。k8sとかCIもっと真面目に書くとかそういうのやってみたいなあ。
