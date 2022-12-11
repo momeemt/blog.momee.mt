@@ -9,13 +9,12 @@ on:
 permissions:
   contents: write
 
-jobs:
-  create-daily:
+jobs:  
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: satackey/action-docker-layer-caching@v0.0.11
-        continue-on-error: true
+      - uses: jiro4989/setup-nim-action@v1
       - name: Set current datetime as env variable
         env:
           TZ: 'Asia/Tokyo'
@@ -30,10 +29,10 @@ jobs:
           git pull origin daily/${{ env.YEAR }}-${{ env.MONTH }}-${{ env.DAY }} || true
           git switch daily/${{ env.YEAR }}-${{ env.MONTH }}-${{ env.DAY }} || git switch -c daily/${{ env.YEAR }}-${{ env.MONTH }}-${{ env.DAY }}
           git push -u origin daily/${{ env.YEAR }}-${{ env.MONTH }}-${{ env.DAY }}
-      - run: docker-compose build
-      - run: docker-compose up -d
+      - run: nimble install https://github.com/momeemt/monokaki -y
+      - run: monokaki build
       - name: Generate Daily
-        run: docker-compose exec -T blog.momee.mt bash -c "cd uni && nimble build && cd ../ && ./uni/bin/uni new:daily"
+        run: monokaki new:daily
       - name: Push
         uses: s0/git-publish-subdir-action@develop
         env:
