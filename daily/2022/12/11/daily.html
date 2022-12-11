@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://blog.momee.mt/2022/12/11/daily.html">
+    <meta property="og:title" content="2022.12.11 | blog.momee.mt">
+    <meta property="og:description" content="ハッカソン（2日目）">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://blog.momee.mt/assets/9.png">
+    <meta property="og:site_name" content="blog.momee.mt">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="../../../../style.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <link rel="icon" href="/assets/favicon.ico">
+    <title>2022.12.11 | blog.momee.mt</title>
+  </head>
+  <body>
+    <div id="uniArticleRoot">
+      <div class="title">
+        <h1>2022.12.11</h1>
+        <p class="title_overview">ハッカソン（2日目）</p>
+      </div>
+      <article>
+        <h1>感想</h1><p></p><p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">👑🦁最優秀賞🦁👑<a href="https://twitter.com/hashtag/%E6%8A%80%E8%82%B2CAMP?src=hash&amp;ref_src=twsrc%5Etfw">#技育CAMP</a> <a href="https://twitter.com/hashtag/%E3%83%8F%E3%83%83%E3%82%AB%E3%82%BD%E3%83%B3?src=hash&amp;ref_src=twsrc%5Etfw">#ハッカソン</a> vol.9🎉<br>テーマ「はじめてのハッカソン」<br><br>栄えある👑最優秀賞👑は、<br>チーム【ハッカ容器】<br>作品： ギリギリ飯<br><br>🎊🎊🎊受賞おめでとうございます🎊🎊🎊 <a href="https://t.co/XzrW0XAJdl">pic.twitter.com/XzrW0XAJdl</a></p>&mdash; 【公式】技育プロジェクト (@geek_pjt) <a href="https://twitter.com/geek_pjt/status/1601870885883109376?ref_src=twsrc%5Etfw">December 11, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p><p>なんかハッカソン優勝してしまった。そんなことある？</p><p>今回ほとんどコードを書いてなくて、Beatさんがフロントを書いてタカバヤPがGoを書いて、デザイン、ロゴ、発表準備と発表を僕がやる感じだった。<br />デザイン面白そうだけど個人的な優先度は低かったので色々触ったり考えたりできたのはよかった。あとチームメンバーが自律的に動けて役割分担がきちんとできている（これは前日までの準備に熱心に取り組んでいた2人と対照的に僕はメンタルが終わって停止していて、残っていたやることをやっただけなんだけど。とはいえ楽しかったので結果オーライだった）というのも良かった。</p><p>リモート寿司で打ち上げかなあとか楽しく話した。<br />ハッカソン、結構しんどいので定期的に出るのは辛いけど半年に一回くらいのペースなら十分楽しんでられるので次はjsysが無事に終わったらcoinsの友達とか誘って大きめの大会出てみたいかなあ。HackDayとか。ポピポポピピプピリロピロリププププピーポの衝撃が強くて...</p><p><a href="https://github.com/momeemt/girigiri-meshi">ギリギリ飯のリポジトリ</a></p><p>次出るとしたら技術的には〜〜どうだろう。k8sとかCIもっと真面目に書くとかそういうのやってみたいなあ。</p>
+      </article>
+      <footer>
+        <div>
+          <a href="../../../../index.html">記事一覧に戻る</a> | 
+          <a href="../../../../daily/index.html">日報一覧に戻る</a> | 
+          <a href="https://github.com/momeemt/blog.momee.mt" target="_blank">source</a>
+        </div>
+        <small>&copy; 2022 Mutsuha Asada</small>
+      </footer>
+    </div>
+    <script>
+      window.WebFontConfig = {
+        google: { families: ['Noto Sans JP'] },
+        active: function() {
+          sessionStorage.fonts = true;
+        }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+      async function subscribe() {
+        fetch('http://localhost:3000/poll')
+        .then((res) => {
+          if (res.status === 200) {
+            location.reload()
+          }
+        })
+        .catch((e) => {
+          console.error(e)
+        })
+      }
+      subscribe();
+    </script>
+  </body>
+</html>
