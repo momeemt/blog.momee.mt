@@ -1,6 +1,6 @@
 version = "0.0.1"
 
 [blog]
-overview = "ハッカソン（2日目）"
-thumbnail = 9
-published = true
+overview = ""
+thumbnail = 16
+published = false
