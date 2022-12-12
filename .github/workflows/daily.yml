@@ -9,12 +9,19 @@ on:
 permissions:
   contents: write
 
+env:
+  LANG: "ja_JP.UTF-8"
+
 jobs:  
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: jiro4989/setup-nim-action@v1
+      - name: ja_JP.UTF-8
+        run: |
+          sudo locale-gen ja_JP.UTF-8
+          sudo update-locale LANG=ja_JP.UTF-8
       - name: Set current datetime as env variable
         env:
           TZ: 'Asia/Tokyo'
