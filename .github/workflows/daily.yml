@@ -39,7 +39,7 @@ jobs:
       - run: nimble install https://github.com/momeemt/monokaki -y
       - run: monokaki build
       - name: Generate Daily
-        run: monokaki new:daily
+        run: monokaki new:daily --date:${{ env.YEAR }}-${{ env.MONTH }}-${{ env.DAY }}
       - name: Push
         uses: s0/git-publish-subdir-action@develop
         env:
