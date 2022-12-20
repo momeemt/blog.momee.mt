@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "期末対策してた"
+thumbnail = 3
+published = true
