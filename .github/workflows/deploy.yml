@@ -15,8 +15,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: jiro4989/setup-nim-action@v1
-      - run: nimble install https://github.com/momeemt/monokaki -y
-      - run: monokaki build
+      - run: nimble install https://github.com/momeemt/racco -y
+      - run: racco build
       - name: Push
         uses: s0/git-publish-subdir-action@develop
         env:
