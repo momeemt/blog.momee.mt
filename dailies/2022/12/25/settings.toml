@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "クリスマス（眠れず）"
+thumbnail = 2
+published = true
