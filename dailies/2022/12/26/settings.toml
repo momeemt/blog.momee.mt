@@ -1,6 +1,6 @@
 version = "0.0.1"
 
 [blog]
-overview = ""
-thumbnail = 16
-published = false
+overview = "非同期プログラミングむずかしい"
+thumbnail = 9
+published = true
