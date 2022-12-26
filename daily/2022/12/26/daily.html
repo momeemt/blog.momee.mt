@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://blog.momee.mt/2022/12/26/daily.html">
+    <meta property="og:title" content="2022.12.26 | blog.momee.mt">
+    <meta property="og:description" content="非同期プログラミングむずかしい">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://blog.momee.mt/assets/9.png">
+    <meta property="og:site_name" content="blog.momee.mt">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="../../../../style.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <link rel="icon" href="/assets/favicon.ico">
+    <title>2022.12.26 | blog.momee.mt</title>
+  </head>
+  <body>
+    <div id="uniArticleRoot">
+      <div class="title">
+        <h1>2022.12.26</h1>
+        <p class="title_overview">非同期プログラミングむずかしい</p>
+      </div>
+      <article>
+        <h1>やったこと</h1><ul><li>raccoの実装</li><li>大掃除 Day1</li><li>知識情報概論 期末試験</li></ul><p></p><p>期末は満点でした。よかった。</p><p>racco、サーバーが不安定で困っていたけどファイル監視が落ちたときにそれのみ再起動してあげることで上手くいった。Nimの非同期プログラミング、気持ちを察するのが非常に難しいので並行プログラミング入門を読んでちゃんと勉強してから知見を貯めていこうと思った。tokioのチュートリアルもまだやってないな...<br />書きながら気づいたけど今度はクライアントからのpollが効かない時があるっぽい<sup><a href="#fn-一回エラーになるとpollが消えるっぽい">[1]</a></sup>ので安定までの道のりは長そう。<br />日報、GitHubの日毎のcontributionsを記事における日付の位置に表示させたらいいなと思ったけどGraphQLのAPIしかないっぽいので困った。statusが出していたのでぼちぼち読んでいこうかな<br />あとはraccoにオプションで環境を指定できるようになったので、執筆環境では下書きが表示されて本番環境では非表示にする、などができるようになった。Next周りのライブラリ触ってる時は前提として実装されていたような機能をちょっとずつ要求に応じて実装していくのは結構楽しい。バニラでは機能が全然足りていないことが自覚的になって良い。</p><p>Dhall、早めに導入したい<sup><a href="#fn-マイナー技術...というほどでもないかもしれないけど、それをたくさん使うことは単にテンションが上がる">[2]</a></sup>。サムネイル番号を指定したりするのが結構大変だからenumにしたいかな。</p><p>大掃除は全く進まなかった。困るよ。<br />重曹を買いに行こうと思ったけど寒くて外に出るのに失敗した。今冬n敗。<br /></p><p><div><div class="footnote_header">脚注</div><ol class="footnote_ordered-list"><li id="fn-一回エラーになるとpollが消えるっぽい" class="footnote_ordered-list"><span>一回エラーになるとpollが消えるっぽい</span></li><li id="fn-マイナー技術...というほどでもないかもしれないけど、それをたくさん使うことは単にテンションが上がる" class="footnote_ordered-list"><span>マイナー技術...というほどでもないかもしれないけど、それをたくさん使うことは単にテンションが上がる</span></li></ol></div></p>
+      </article>
+      <footer>
+        <div>
+          <a href="../../../../index.html">記事一覧に戻る</a> | 
+          <a href="../../../../daily/index.html">日報一覧に戻る</a> | 
+          <a href="https://github.com/momeemt/blog.momee.mt" target="_blank">source</a>
+        </div>
+        <small>&copy; 2022 Mutsuha Asada</small>
+      </footer>
+    </div>
+    <script>
+      window.WebFontConfig = {
+        google: { families: ['Noto Sans JP'] },
+        active: function() {
+          sessionStorage.fonts = true;
+        }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+      async function subscribe() {
+        fetch('http://localhost:3000/poll')
+        .then((res) => {
+          if (res.status === 200) {
+            location.reload()
+          }
+        })
+        .catch((e) => {
+          console.error(e)
+        })
+      }
+      subscribe();
+    </script>
+  </body>
+</html>
