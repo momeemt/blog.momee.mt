@@ -1,0 +1,56 @@
+{* 目標}
+
+{** 必ず}
+{list
+  IPLabにメールを送ってAREに取り組む,
+  サイボーズラボユースの言語処理系ゼミに応募する,
+  GPA 3.6↑,
+  dotfilesを整備する,
+  [@ Haskellの入門から中級者になるまでの指針, https://qiita.com/Lugendre/items/70e517e59698e0e435f5]の「入門〜初心者」までの内容に取り組む,
+  色彩検定2級に合格する,
+  nim-lang/Nimに5回以上PRを送る,
+  自宅メディア変換サーバーを完成させる,
+  Rust製のHTTP/1.1サーバーを実装する,
+  SATySFiを日常使いする,
+  NeoVimの基本的な操作を覚える,
+  HCIの論文を12本以上読む,
+  GitHub Contributions 2500↑,
+  高校物理を復習する,
+  [@ クリエイティブコーディングの教科書, https://zenn.dev/baroqueengine/books/a19140f2d9fc1a]に取り組んで、理解する,
+  コマンドのソースコードリーディングをして、Zigで追実装する [@ ref, https://twitter.com/soudai1025/status/1517335997243346944?s=20&t=j-WBpjhnGWy2dWSyG-8S8g],
+  ゼロから作るDeep Learingを復習する,
+  ゼロから作るDeep Learing ②を読破する,
+  ゼロから作るDeep Learning ③を読破・実装する,
+  ゼロから作るDeep Learning ④を読破する
+}
+
+{** できれば}
+{list
+  GPA 3.8↑,
+  [@ Haskellの入門から中級者になるまでの指針, https://qiita.com/Lugendre/items/70e517e59698e0e435f5]の「脱初心者を目指す」までの内容に取り組む,
+  統計検定2級に合格する,
+  簿記2級に合格する,
+  ネットワークスペシャリスト試験に合格する,
+  データベーススペシャリスト試験に合格する,
+  momeeccのセルフホストを達成する,
+  タイガーブックを読破する,
+  GitHub Contributions 3000↑,
+  [@ レイトレーシング入門, https://zenn.dev/mebiusbox/books/8d9c42883df9f6]に取り組んで、理解する,
+  [@ 基礎からはじめる物理ベースレンダリング, https://zenn.dev/mebiusbox/books/619c81d2fbeafd]に取り組んで、理解する,
+  [@ CGのための数学, https://zenn.dev/mebiusbox/books/132b654aa02124]に取り組んで、理解する,
+  CoPLを読破する,
+  [@ Writing a container in Rust, https://litchipi.github.io/series/container_in_rust]に取り組む
+}
+
+{** がんばる}
+{list
+  時雨堂のアルバイトに参加する,
+  GPA 4.0↑,
+  TaPLを読破する,
+  ドラゴンブックを読破する,
+  正規表現エンジンをリリースする,
+  momeeccをC11に対応させる,
+  英検準1級に合格する,
+  画像処理エンジニア検定 エキスパートに合格する,
+  GitHub Contributions 4000↑
+}
