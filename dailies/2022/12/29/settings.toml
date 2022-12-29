@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "御殿場に行った"
+thumbnail = 1
+published = true
