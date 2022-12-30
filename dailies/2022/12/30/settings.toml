@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "ベーシックという嘘すぎる言葉選び"
+thumbnail = 11
+published = true
