@@ -3,4 +3,4 @@ version = "0.0.1"
 [blog]
 overview = "あけましておめでとうございます"
 thumbnail = 5
-published = false
+published = true
