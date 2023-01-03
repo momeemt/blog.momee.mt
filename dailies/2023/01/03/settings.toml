@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "美味しいお肉を焼いて食べた"
+thumbnail = 3
+published = true
