@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://blog.momee.mt/2023/01/03/daily.html">
+    <meta property="og:title" content="2023.01.03 | blog.momee.mt">
+    <meta property="og:description" content="美味しいお肉を焼いて食べた">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://blog.momee.mt/assets/3.png">
+    <meta property="og:site_name" content="blog.momee.mt">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="../../../../style.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <link rel="icon" href="/assets/favicon.ico">
+    <title>2023.01.03 | blog.momee.mt</title>
+  </head>
+  <body>
+    <div id="uniArticleRoot">
+      <div class="title">
+        <h1>2023.01.03</h1>
+        <p class="title_overview">美味しいお肉を焼いて食べた</p>
+      </div>
+      <article>
+        <h1>やったこと</h1><ul><li>新歓パンフのビルドワークフローを書いた</li><li><a href="https://tech.buty4649.net/entry/2021/12/19/235124" target="_blank" rel="noopener noreferrer">Rustで始める自作シェル その1</a>の勉強と実装</li><li>PureScriptのインストール</li></ul><p></p><p>パンフレットを個別ビルドするワークフローを書いた。<br />文書ごとにビルドするためにほとんど同じ設定内容のワークフローがいくつもあるので、うまく共通化するとか動的に<code style="display: inline-block;padding: 0.05em 0.20em;margin: 0 10px;color: #444;background-color: #e7edf3;border-radius: 3px;border: solid 1px #d6dde4;">branches</code>を設定するとかしたい。</p><p>シェル、システムコールやシグナルの仕様などよく知らないことが無限に現れる上にRustで実装しているのでかなり大変だけど、自作シェルで開発やっていきたい気持ちがあるので今月はもくもく作っていきたい。あと、Linux鈍器の消化とかもね、やりたいんですけどね...<br /></p>
+      </article>
+      <footer>
+        <div>
+          <a href="../../../../index.html">記事一覧に戻る</a> | 
+          <a href="../../../../daily/index.html">日報一覧に戻る</a> | 
+          <a href="https://github.com/momeemt/blog.momee.mt" target="_blank">source</a>
+        </div>
+        <small>&copy; 2022 Mutsuha Asada</small>
+      </footer>
+    </div>
+    <script>
+      window.WebFontConfig = {
+        google: { families: ['Noto Sans JP'] },
+        active: function() {
+          sessionStorage.fonts = true;
+        }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+      async function subscribe() {
+        fetch('http://localhost:3000/poll')
+        .then((res) => {
+          if (res.status === 200) {
+            location.reload()
+          }
+        })
+        .catch((e) => {
+          console.error(e)
+        })
+      }
+      subscribe();
+    </script>
+  </body>
+</html>
