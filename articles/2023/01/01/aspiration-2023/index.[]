@@ -1,35 +1,58 @@
 {* 目標}
+今年も全く反省せず無謀な目標を100個用意した。だいたい毎年同じようなことをして見事にほぼ達成できずに1年を終えるのでもう立てるのも嫌なんだけど、まあ意識は日を追うごとに下がっていくのでお正月くらい意識を吊り上げておいても別にバチは当たらないかなと思った。
+去年の1月のログを見返したら目標が高すぎて案の定心が折れかけていたので、今年はレベル感ごとに分けてみた。「必ず」は80%くらいクリアしたい目標、「できれば」は40%くらいクリアしたい目標、「できれば」は1つできるだけでも良いような高めの目標になっている<^ つまり半分くらいクリアできたら上出来で、30個くらいになるんじゃないかなと思っている>。あくまで目安なので無理せずやっていきたい。進捗を反映させたいのでチェックリストをそのうち実装しておきたい。
 
-{** 必ず}
+{** 必ず（41個）}
 {list
   IPLabにメールを送ってAREに取り組む,
   サイボーズラボユースの言語処理系ゼミに応募する,
   GPA 3.6↑,
   dotfilesを整備する,
   [@ Haskellの入門から中級者になるまでの指針, https://qiita.com/Lugendre/items/70e517e59698e0e435f5]の「入門〜初心者」までの内容に取り組む,
-  色彩検定2級に合格する,
+  [@ 実例によるPureScript, https://aratama.github.io/purescript/purescript-book-ja.html]の内容に取り組む,
   nim-lang/Nimに5回以上PRを送る,
   自宅メディア変換サーバーを完成させる,
-  Rust製のHTTP/1.1サーバーを実装する,
+  自宅NASを構築する（Cloudron, NextCloud）,
   SATySFiを日常使いする,
   NeoVimの基本的な操作を覚える,
   HCIの論文を12本以上読む,
   GitHub Contributions 2500↑,
-  高校物理を復習する,
   [@ クリエイティブコーディングの教科書, https://zenn.dev/baroqueengine/books/a19140f2d9fc1a]に取り組んで、理解する,
   コマンドのソースコードリーディングをして、Zigで追実装する [@ ref, https://twitter.com/soudai1025/status/1517335997243346944?s=20&t=j-WBpjhnGWy2dWSyG-8S8g],
   ゼロから作るDeep Learingを復習する,
   ゼロから作るDeep Learing ②を読破する,
   ゼロから作るDeep Learning ③を読破・実装する,
-  ゼロから作るDeep Learning ④を読破する
+  ゼロから作るDeep Learning ④を読破する,
+  ブログの設定ファイル言語をDhallに変更する,
+  小説を4冊以上読む,
+  技術書を24冊以上読む,
+  週報を書く,
+  月報を書く,
+  タスクをTodoistで管理する,
+  毎日のスケジュールをSorted³で作成する,
+  毎日の行動をTogglで追跡する,
+  Zennに6つ以上記事を出す,
+  週に1つ以上デザインのトレース練習をする,
+  ScrapboxからObsidianに完全に移行する,
+  電子工作でLチカを光らせる,
+  Kubernetesに入門する,
+  週1でUnityを触る,
+  週1でBlenderを触る,
+  ZigでHPKEを実装してみる,
+  YouTubeを見る回数を週に3回以下に抑える,
+  押し入れの片付けをして収納にしまう,
+  読み終わった本を処分する,
+  週に1回は掃除をする,
+  Idrisに入門する,
+  新年に買った料理本を1冊消化する
 }
 
-{** できれば}
+{** できれば（38個）}
 {list
   GPA 3.8↑,
   [@ Haskellの入門から中級者になるまでの指針, https://qiita.com/Lugendre/items/70e517e59698e0e435f5]の「脱初心者を目指す」までの内容に取り組む,
-  統計検定2級に合格する,
   簿記2級に合格する,
+  dotfilesの整備に伴ってNixに移行する,
   ネットワークスペシャリスト試験に合格する,
   データベーススペシャリスト試験に合格する,
   momeeccのセルフホストを達成する,
@@ -39,10 +62,34 @@
   [@ 基礎からはじめる物理ベースレンダリング, https://zenn.dev/mebiusbox/books/619c81d2fbeafd]に取り組んで、理解する,
   [@ CGのための数学, https://zenn.dev/mebiusbox/books/132b654aa02124]に取り組んで、理解する,
   CoPLを読破する,
-  [@ Writing a container in Rust, https://litchipi.github.io/series/container_in_rust]に取り組む
+  [@ Writing a container in Rust, https://litchipi.github.io/series/container_in_rust]に取り組む,
+  masasonの正財団生に認定される,
+  小説を8冊以上読む,
+  技術書を36冊以上読む,
+  [@ 自作シェル, https://github.com/momeemt/mosh]を公開する,
+  GitKrakenをやめてCLIで完結させる,
+  週1で映像を作る練習をする,
+  Zennに12つ以上記事を出す,
+  VSCodeのショートカットキーを覚える,
+  シェルスクリプトのコマンドをある程度覚えて使えるようになる,
+  色彩検定2級に合格する,
+  ISUCONに出場する,
+  高校物理を復習する,
+  Rust製のHTTP/1.1サーバーを実装する,
+  OBSの勉強をする,
+  実用的な仮想DOMを実装してみる,
+  Nimの非同期プログラミングについてまとめた記事を書く,
+  コンピュータシステムの理論と実装を読破・実装する,
+  ZennでGitHub Actionsのワークフローをまとめた本を書く,
+  お風呂を遠隔で沸かせるようにする,
+  YouTubeを見る回数を週に1回以下に抑える,
+  メールサーバーを立てる,
+  新年に買った料理本を2冊消化する,
+  言語学に入門してみたい,
+  服を自発的に買う
 }
 
-{** がんばる}
+{** がんばる（21個）}
 {list
   時雨堂のアルバイトに参加する,
   GPA 4.0↑,
@@ -52,5 +99,17 @@
   momeeccをC11に対応させる,
   英検準1級に合格する,
   画像処理エンジニア検定 エキスパートに合格する,
-  GitHub Contributions 4000↑
+  GitHub Contributions 4000↑,
+  小説を12冊以上読む,
+  技術書を48冊以上読む,
+  Zennに18つ以上記事を出す,
+  WebRTCを使ったアプリケーションを実装する,
+  FFmpeg_Book.pdf を読み切る,
+  統計検定2級に合格する,
+  CPUの創りかたを読んで、CPUを作る,
+  BrackのLanguage Server Protocolを作る,
+  AtCoderで水色になる,
+  Linuxプログラミングインターフェースを読破する,
+  OpenGL4.0 グラフィクスシステムを読破する,
+  新年に買った料理本をすべて消化する
 }
