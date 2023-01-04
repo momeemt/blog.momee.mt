@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://blog.momee.mt/2023/01/04/daily.html">
+    <meta property="og:title" content="2023.01.04 | blog.momee.mt">
+    <meta property="og:description" content="新歓パンフがビルドできるようになった">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://blog.momee.mt/assets/7.png">
+    <meta property="og:site_name" content="blog.momee.mt">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="../../../../style.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <link rel="icon" href="/assets/favicon.ico">
+    <title>2023.01.04 | blog.momee.mt</title>
+  </head>
+  <body>
+    <div id="uniArticleRoot">
+      <div class="title">
+        <h1>2023.01.04</h1>
+        <p class="title_overview">新歓パンフがビルドできるようになった</p>
+      </div>
+      <article>
+        <h1>やったこと</h1><ul><li>新歓パンフの自動ビルド実装</li><li><a href="/2023/01/01/aspiration-2023.html" target="_blank" rel="noopener noreferrer">抱負2023</a>を書いた</li></ul><p></p><p>年末年始は実家に戻っていたが、今日つくばに戻ってきた。疲れた。<br />バスの中で新歓パンフの自動ビルドを実装していて、mainブランチにマージされた時にそれぞれの章を<code style="display: inline-block;padding: 0.05em 0.20em;margin: 0 10px;color: #444;background-color: #e7edf3;border-radius: 3px;border: solid 1px #d6dde4;">pdfunite</code>で結合してアップロードする形まで持っていけた。難しかった、疲れた。Dockerのレイヤーキャッシュが効いていなくて辛いのでその調査と、動的にワークフローの設定をやるにはどうすればいいかを調べるのと、やっていきたい。<br />明日は新歓パンフの関係者に見せる手引きを書こうと思う。新歓webをGatsbyでやっていきたい気持ちがあるので、その練習にする予定。</p><p>抱負は、まあ、この時期は意識が急に吊り上がるよね、これくらいやる気のある時に頑張る姿勢を自分に示すのは良いかもね、という気持ちになって書いた。まあ、全部達成できたらえらい超人なので無理せずぼちぼちやっていきます。<br /></p>
+      </article>
+      <footer>
+        <div>
+          <a href="../../../../index.html">記事一覧に戻る</a> | 
+          <a href="../../../../daily/index.html">日報一覧に戻る</a> | 
+          <a href="https://github.com/momeemt/blog.momee.mt" target="_blank">source</a>
+        </div>
+        <small>&copy; 2022 Mutsuha Asada</small>
+      </footer>
+    </div>
+    <script>
+      window.WebFontConfig = {
+        google: { families: ['Noto Sans JP'] },
+        active: function() {
+          sessionStorage.fonts = true;
+        }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+      async function subscribe() {
+        fetch('http://localhost:3000/poll')
+        .then((res) => {
+          if (res.status === 200) {
+            location.reload()
+          }
+        })
+        .catch((e) => {
+          console.error(e)
+        })
+      }
+      subscribe();
+    </script>
+  </body>
+</html>
