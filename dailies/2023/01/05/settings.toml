@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "鰤を焦がした"
+thumbnail = 9
+published = true
