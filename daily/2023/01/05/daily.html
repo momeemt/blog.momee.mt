@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://blog.momee.mt/2023/01/05/daily.html">
+    <meta property="og:title" content="2023.01.05 | blog.momee.mt">
+    <meta property="og:description" content="鰤を焦がした">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://blog.momee.mt/assets/9.png">
+    <meta property="og:site_name" content="blog.momee.mt">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="../../../../style.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <link rel="icon" href="/assets/favicon.ico">
+    <title>2023.01.05 | blog.momee.mt</title>
+  </head>
+  <body>
+    <div id="uniArticleRoot">
+      <div class="title">
+        <h1>2023.01.05</h1>
+        <p class="title_overview">鰤を焦がした</p>
+      </div>
+      <article>
+        <h1>やったこと</h1><ul><li>買い物</li><li>領収書提出</li><li>racco 週報・月報の実装</li><li>新歓パンフ手引き 途中まで</li><li>夕ご飯作った</li></ul><p></p><p>Gatsby触ったけどGraphQL面白いな〜、とか世に出回ってるスターターを名乗るリポジトリ、ほとんど動かないじゃんね、とか思った。地道にやっていきたい。普通にのんびり勉強している時間は全くない。</p><h1>感想</h1><p></p><img src="buri.jpg" alt=" 鰤を焦がしてしまった" /><p></p><p>やや焼きすぎたけど脂が乗っていておいしかった。<br />今年は年始に買った<a href="https://www.tv-tokyo.co.jp/danshigohan/" target="_blank" rel="noopener noreferrer">男子ご飯</a>の本を埋めて行くことにしたので、早速作った。いきなりカニの甲羅や鰤のアラを要求されて平カスには荷が重いよ...と思って行ったら案の定置いてなかった。桜カスミかロピア行ったら置いてるかもしれない。</p><p>洗濯機がまた壊れた。今回は給水しない感じらしく、凍結を疑っている。いや、流石に寒くても洗濯機凍結してたら厳しいんだけど...。明日様子を見てみたい。洗濯物を入れすぎて動いていないとか、そういう簡単な問題だといいなあと思っている。</p>
+      </article>
+      <footer>
+        <div>
+          <a href="../../../../index.html">記事一覧に戻る</a> | 
+          <a href="../../../../daily/index.html">日報一覧に戻る</a> | 
+          <a href="https://github.com/momeemt/blog.momee.mt" target="_blank">source</a>
+        </div>
+        <small>&copy; 2022 Mutsuha Asada</small>
+      </footer>
+    </div>
+    <script>
+      window.WebFontConfig = {
+        google: { families: ['Noto Sans JP'] },
+        active: function() {
+          sessionStorage.fonts = true;
+        }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+      async function subscribe() {
+        fetch('http://localhost:3000/poll')
+        .then((res) => {
+          if (res.status === 200) {
+            location.reload()
+          }
+        })
+        .catch((e) => {
+          console.error(e)
+        })
+      }
+      subscribe();
+    </script>
+  </body>
+</html>
