@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "焼きそばのイメージが払拭された"
+thumbnail = 16
+published = true
