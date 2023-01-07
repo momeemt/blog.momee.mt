@@ -157,7 +157,9 @@ footer small {
 }
 
 .articleCards,
-.dailyCards {
+.dailyCards,
+.weeklyCards,
+.monthlyCards {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -223,7 +225,9 @@ footer small {
   height: 320px;
 }
 
-.dailyCards .articleCard {
+.dailyCards .articleCard,
+.weeklyCards .articleCard,
+.monthlyCards .articleCard {
   height: 280px;
 }
 
@@ -248,7 +252,9 @@ footer small {
   top: 0; left: 0;
 }
 
-.dailyCards .articleCard__thumbnail {
+.dailyCards .articleCard__thumbnail,
+.weeklyCards .articleCard__thumbnail,
+.monthlyCards .articleCard__thumbnail {
   height: 55%;
 }
 
@@ -263,7 +269,9 @@ footer small {
   padding: 0;
 }
 
-.dailyCards .articleCard__body--title {
+.dailyCards .articleCard__body--title,
+.weeklyCards .articleCard__body--title,
+.monthlyCards .articleCard__body--title {
   top: 60%;
 }
 
@@ -276,7 +284,9 @@ footer small {
   left: 20px;
 }
 
-.dailyCards .articleCard__body--overview {
+.dailyCards .articleCard__body--overview,
+.weeklyCards .articleCard__body--overview,
+.monthlyCards .articleCard__body--overview {
   top: 72%;
 }
 
