@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://blog.momee.mt/2023/01/09/daily.html">
+    <meta property="og:title" content="2023.01.09 | blog.momee.mt">
+    <meta property="og:description" content="メンタルが終わっていた">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://blog.momee.mt/assets/14.png">
+    <meta property="og:site_name" content="blog.momee.mt">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="../../../../style.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <link rel="icon" href="/assets/favicon.ico">
+    <title>2023.01.09 | blog.momee.mt</title>
+  </head>
+  <body>
+    <div id="uniArticleRoot">
+      <div class="title">
+        <h1>2023.01.09</h1>
+        <p class="title_overview">メンタルが終わっていた</p>
+      </div>
+      <article>
+        <h1>やったこと</h1><ul><li>Nimからwebhook流す実験をした</li><li>詳解Rustプログラミング 第4章 + 第5章半分くらい</li><li>洗濯</li><li>洗い物</li><li>履修について調べた</li><li>Rustでアプリケーションを実装し始めた</li></ul><p></p><p>何度もテキストを読んでるけど実際に何か実装しないと書けるようにならないなと思ったので書き始めた。あまり進捗はなかったけどRustの開発体験は良くて楽しいので頑張って続けていきたい。毎日ちょっとでもRustに触れるようにしたい。</p><h1>読んだ</h1><ul><li><a href="SC2011" target="_blank" rel="noopener noreferrer">シェルスクリプトでlsをパイプでつなぐのはなぜ悪いのか ～ ShellCheck: SC2010</a></li></ul><p></p><p>隅々まで読んだわけではないけどかなり面白かった。この筆者の方、シェルへの知識が深くてすごいなあと思った。</p><h1>感想</h1><p>今日はメンタルが終わっていて大変だった。本当に。<br />長期間家に篭っているとだんだん病んでくるので散歩とかを挟んでるんだけど、普通に外寒すぎてそれどころではなかった。何かリフレッシュになるものを見つけたい。<br /></p>
+      </article>
+      <footer>
+        <div>
+          <a href="../../../../index.html">記事一覧に戻る</a> | 
+          <a href="../../../../daily/index.html">日報一覧に戻る</a> | 
+          <a href="../../../../weekly/index.html">週報一覧に戻る</a> | 
+          <a href="../../../../monthly/index.html">月報一覧に戻る</a> | 
+          <a href="https://github.com/momeemt/blog.momee.mt" target="_blank">source</a>
+        </div>
+        <small>&copy; 2023 Mutsuha Asada</small>
+      </footer>
+    </div>
+    <script>
+      window.WebFontConfig = {
+        google: { families: ['Noto Sans JP'] },
+        active: function() {
+          sessionStorage.fonts = true;
+        }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+      async function subscribe() {
+        fetch('http://localhost:3000/poll')
+        .then((res) => {
+          if (res.status === 200) {
+            location.reload()
+          }
+        })
+        .catch((e) => {
+          console.error(e)
+        })
+      }
+      subscribe();
+    </script>
+  </body>
+</html>
