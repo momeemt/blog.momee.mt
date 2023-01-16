@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "たのしかった北海道"
+thumbnail = 8
+published = true

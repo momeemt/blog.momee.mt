@@ -1,10 +1,10 @@
 {* やったこと}
-{list
-  プロ入A 課題,
-  EPS 課題,
-  ERS 課題 x 2,
-  新歓ミーティングに出た,
-  Rasberry PiにVNC経由で接続した
+{ul
+  [li プロ入A 課題],
+  [li EPS 課題],
+  [li ERS 課題 x 2],
+  [li 新歓ミーティングに出た],
+  [li Rasberry PiにVNC経由で接続した]
 }
 
 {** 感想}

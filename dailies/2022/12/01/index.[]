@@ -1,11 +1,11 @@
 {* やったこと}
-{list
-  [@ アドベントカレンダー, https://zenn.dev/momeemt/articles/nim-devel-docker-image]を書いた,
-  {list
-    はじめてDocker Hubにpushして、ハーンそういう感じね、と思った
+{ul
+  [li [@ アドベントカレンダー, https://zenn.dev/momeemt/articles/nim-devel-docker-image]を書いた],
+  {ul
+    [li はじめてDocker Hubにpushして、ハーンそういう感じね、と思った]
   },
-  あとはHPKEについて調べた,
-  体育に出た（えらい）
+  [li あとはHPKEについて調べた],
+  [li 体育に出た（えらい）]
 }
 
 1限体育に頑張って行った。非常にえらい。

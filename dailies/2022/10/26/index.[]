@@ -1,14 +1,14 @@
 {* やったこと}
-{list
-  洗い物・水回りの掃除,
-  Rustの勉強
-  {list
-    [@ Zenn, https://zenn.dev/momeemt/scraps/0e5dd70754bcc4]にログを取っている
+{ul
+  [li 洗い物・水回りの掃除],
+  [li Rustの勉強],
+  {ul
+    [li [@ Zenn, https://zenn.dev/momeemt/scraps/0e5dd70754bcc4]にログを取っている]
   },
-  図書館概論 課題,
-  部屋の掃除
-  {list
-    徐々に片付いてきた
+  [li 図書館概論 課題],
+  [li 部屋の掃除],
+  {ul
+    [li 徐々に片付いてきた]
   }
 }
 

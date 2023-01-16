@@ -1,10 +1,10 @@
 {* やったこと}
-{list
-  [@ Unityチュートリアル Roll-a-Ball, https://learn.unity.com/project/bolt-roll-a-ball-tutorial?courseId=606c107eedbc2a0afb98ea50],
-  週報・月報の実装,
-  手引きの公開,
-  The SATySFi bookの第6章まで読んだ,
-  掃除
+{ul
+  [li [@ Unityチュートリアル Roll-a-Ball, https://learn.unity.com/project/bolt-roll-a-ball-tutorial?courseId=606c107eedbc2a0afb98ea50]],
+  [li 週報・月報の実装],
+  [li 手引きの公開],
+  [li The SATySFi bookの第6章まで読んだ],
+  [li 掃除]
 }
 
 今日は6時に目が覚めた。なんかだんだん生活習慣が改善してきている気がして嬉しい。その副作用（？）か3時くらいから眠くなってしまってそれからずっとぼんやりしていた。そろそろ次の日の過ごし方をSortedで規定した方が良いかも。
