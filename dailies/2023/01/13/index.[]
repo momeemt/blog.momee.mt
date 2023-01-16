@@ -1,8 +1,8 @@
 {* やったこと}
-{list
-  jsysで北海道に来た,
-  パンフにtextlintによるチェックを入れた,
-  実例によるPureScriptの第4章を読んだ
+{ul
+  [li jsysで北海道に来た],
+  [li パンフにtextlintによるチェックを入れた],
+  [li 実例によるPureScriptの第4章を読んだ]
 }
 
 checkoutで落ちるのよくわからないな〜と思っていた。自分のPATを使って解決したけど、コメントがmomeemtからされるので微妙。GHActionsのアカウントから飛んでほしいなと思う。
