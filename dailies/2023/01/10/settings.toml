@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "ネ部門長になりました"
+thumbnail = 16
+published = true
