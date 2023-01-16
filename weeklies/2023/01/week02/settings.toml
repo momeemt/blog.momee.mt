@@ -1,6 +1,6 @@
 version = "0.0.1"
 
 [blog]
-overview = ""
-thumbnail = 16
-published = false
+overview = "北海道でも続くパンフ作業"
+thumbnail = 2
+published = true
