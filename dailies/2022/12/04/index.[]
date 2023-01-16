@@ -1,8 +1,8 @@
 {* やったこと}
-{list
-  CoPLをちょっと読んだ,
-  brackからJSONを吐けるようにした,
-  monokakiのSSG対応を頑張っていた
+{ul
+  [li CoPLをちょっと読んだ],
+  [li brackからJSONを吐けるようにした],
+  [li monokakiのSSG対応を頑張っていた]
 }
 
 うーーん上手くいかない。

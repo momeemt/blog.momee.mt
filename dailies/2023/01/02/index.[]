@@ -1,11 +1,11 @@
 {* やったこと}
-{list
-  actが動くようになった,
-  Fine-grained personal access tokensの勉強,
-  GitHub ActionsにおけるDockerのレイヤーキャッシュの勉強,
-  新歓パンフのCIを通した,
-  新歓パンフの部分ビルドを実装した,
-  GleamでFizzBuzzを実装した
+{ul
+  [li actが動くようになった],
+  [li Fine-grained personal access tokensの勉強],
+  [li GitHub ActionsにおけるDockerのレイヤーキャッシュの勉強],
+  [li 新歓パンフのCIを通した],
+  [li 新歓パンフの部分ビルドを実装した],
+  [li GleamでFizzBuzzを実装した]
 }
 
 {* 感想}

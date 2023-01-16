@@ -1,8 +1,8 @@
 {* やったこと}
-{list
-  Cコンパイラ開発,
-  無作為抽出寿司,
-  [@ sushiro, https://github.com/momeemt/sushiro]
+{ul
+  [li Cコンパイラ開発],
+  [li 無作為抽出寿司],
+  [li [@ sushiro, https://github.com/momeemt/sushiro]]
 }
 
 {* 無作為抽出寿司について}

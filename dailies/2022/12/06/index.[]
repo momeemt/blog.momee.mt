@@ -1,6 +1,6 @@
 {* やったこと}
-{list
-  [@ PRを作って出した, https://github.com/nim-lang/Nim/pull/21034]
+{ul
+  [li [@ PRを作って出した, https://github.com/nim-lang/Nim/pull/21034]]
 }
 
 PRを作った！そして出した。ドキドキ...

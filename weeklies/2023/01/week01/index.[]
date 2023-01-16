@@ -1,37 +1,37 @@
 {* 今週の日報}
-{list
-  [@ 2023.01.01, /daily/2023/01/01/daily.html],
-  [@ 2023.01.02, /daily/2023/01/02/daily.html],
-  [@ 2023.01.03, /daily/2023/01/03/daily.html],
-  [@ 2023.01.04, /daily/2023/01/04/daily.html],
-  [@ 2023.01.05, /daily/2023/01/05/daily.html],
-  [@ 2023.01.06, /daily/2023/01/06/daily.html],
-  [@ 2023.01.07, /daily/2023/01/07/daily.html]
+{ul
+  [li [@ 2023.01.01, /daily/2023/01/01/daily.html]],
+  [li [@ 2023.01.02, /daily/2023/01/02/daily.html]],
+  [li [@ 2023.01.03, /daily/2023/01/03/daily.html]],
+  [li [@ 2023.01.04, /daily/2023/01/04/daily.html]],
+  [li [@ 2023.01.05, /daily/2023/01/05/daily.html]],
+  [li [@ 2023.01.06, /daily/2023/01/06/daily.html]],
+  [li [@ 2023.01.07, /daily/2023/01/07/daily.html]]
 }
 
 {* やったこと・勉強したこと}
-{list
-  高尾山に行った（1日）,
-  Todoistの完了タスクをBrack形式で取得する実装（1日）,
-  新歓パンフのCIを実装（2日）,
-  新歓パンフの章個別ビルドを実装（2日）,
-  actを使ったローカルでのワークフロー実行（2日）,
-  Fine-grained personal access tokensの勉強（2日）,
-  GitHub ActionsにおけるDockerのレイヤーキャッシュの勉強（2日）,
-  GleamをインストールしてFizzBuzzを書いた（2日）,
-  [@ Rustで始める自作シェル その1, https://tech.buty4649.net/entry/2021/12/19/235124]の勉強と実装（3日）,
-  PureScriptのインストール（3日）,
-  新歓パンフの全体ビルド実装（4日）,
-  領収書を提出した（5日）,
-  ブログの週報と月報を実装した（5日）,
-  新歓パンフの執筆手引きを書いた（5日）,
-  Gatsbyの勉強をした（5日）,
-  鰤の照り焼きと小松菜のおひたしを作った（5日）,
-  新歓パンフのdevcontainerを整備した（6日）,
-  五目あんかけかた焼きそばを作った（6日）,
-  [@ Unityチュートリアル Roll-a-Ball, https://learn.unity.com/project/bolt-roll-a-ball-tutorial?courseId=606c107eedbc2a0afb98ea50]（7日）,
-  The SATySFi bookの第6章までを読んだ（7日）,
-  部屋の掃除をした（7日）
+{ul
+  [li 高尾山に行った（1日）],
+  [li Todoistの完了タスクをBrack形式で取得する実装（1日）],
+  [li 新歓パンフのCIを実装（2日）],
+  [li 新歓パンフの章個別ビルドを実装（2日）],
+  [li actを使ったローカルでのワークフロー実行（2日）],
+  [li Fine-grained personal access tokensの勉強（2日）],
+  [li GitHub ActionsにおけるDockerのレイヤーキャッシュの勉強（2日）],
+  [li GleamをインストールしてFizzBuzzを書いた（2日）],
+  [li [@ Rustで始める自作シェル その1, https://tech.buty4649.net/entry/2021/12/19/235124]の勉強と実装（3日）],
+  [li PureScriptのインストール（3日）],
+  [li 新歓パンフの全体ビルド実装（4日）],
+  [li 領収書を提出した（5日）],
+  [li ブログの週報と月報を実装した（5日）],
+  [li 新歓パンフの執筆手引きを書いた（5日）],
+  [li Gatsbyの勉強をした（5日）],
+  [li 鰤の照り焼きと小松菜のおひたしを作った（5日）],
+  [li 新歓パンフのdevcontainerを整備した（6日）],
+  [li 五目あんかけかた焼きそばを作った（6日）],
+  [li [@ Unityチュートリアル Roll-a-Ball, https://learn.unity.com/project/bolt-roll-a-ball-tutorial?courseId=606c107eedbc2a0afb98ea50]（7日）],
+  [li The SATySFi bookの第6章までを読んだ（7日）],
+  [li 部屋の掃除をした（7日）]
 }
 
 {* GitHub}
@@ -40,18 +40,18 @@
 ほとんど新歓関連。想像の5倍忙しい。先代の凄みを感じている...
 
 {* 読んだ記事}
-{list
-  [@ GitHub Actionsでコマンドの結果を環境変数に設定する, https://qiita.com/sekitaka_1214/items/c895867101799175c156],
-  [@ GitHub ActionsでDockerレイヤーキャッシュを利用したい, https://dev.classmethod.jp/articles/github-actions-docker-layer-cache-enable/],
-  [@ gleam, https://github.com/gleam-lang/gleam],
-  [@ Rustで始める自作シェル その1, https://tech.buty4649.net/entry/2021/12/19/235124],
-  [@ SATySFiを使ってみた話, https://cobodo.hateblo.jp/entry/2018/11/27/SATySFi%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1],
-  [@ Gitのワークフローについての私のスタンス, https://songmu.jp/riji/entry/2021-05-19-my-git-workflow.html],
-  [@ Gatsby\, TypeScript\, Emotion\, Tailwind\, MDXでブログを作っている, https://qiita.com/AumyF/items/a6a8400cf9f5f2ce488f],
-  [@ gatsby-plugin-mdx, https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx/],
-  [@ Working with Images in Markdown & MDX, https://www.gatsbyjs.com/docs/how-to/images-and-media/working-with-images-in-markdown/],
-  [@ 【Unity】Boltの名前がUnity2021からVisual Scriptingになったのよ, https://ekulabo.com/bolt-to-visual-scripting],
-  [@ 卑下をしない: 自分の上にも下にも人がいる, https://blog.fuku.day/posts/2023/01/05/hige-shitara-korosu/]
+{ul
+  [li [@ GitHub Actionsでコマンドの結果を環境変数に設定する, https://qiita.com/sekitaka_1214/items/c895867101799175c156]],
+  [li [@ GitHub ActionsでDockerレイヤーキャッシュを利用したい, https://dev.classmethod.jp/articles/github-actions-docker-layer-cache-enable/]],
+  [li [@ gleam, https://github.com/gleam-lang/gleam]],
+  [li [@ Rustで始める自作シェル その1, https://tech.buty4649.net/entry/2021/12/19/235124]],
+  [li [@ SATySFiを使ってみた話, https://cobodo.hateblo.jp/entry/2018/11/27/SATySFi%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F%E8%A9%B1]],
+  [li [@ Gitのワークフローについての私のスタンス, https://songmu.jp/riji/entry/2021-05-19-my-git-workflow.html]],
+  [li [@ Gatsby\, TypeScript\, Emotion\, Tailwind\, MDXでブログを作っている, https://qiita.com/AumyF/items/a6a8400cf9f5f2ce488f]],
+  [li [@ gatsby-plugin-mdx, https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx/]],
+  [li [@ Working with Images in Markdown & MDX, https://www.gatsbyjs.com/docs/how-to/images-and-media/working-with-images-in-markdown/]],
+  [li [@ 【Unity】Boltの名前がUnity2021からVisual Scriptingになったのよ, https://ekulabo.com/bolt-to-visual-scripting]],
+  [li [@ 卑下をしない: 自分の上にも下にも人がいる, https://blog.fuku.day/posts/2023/01/05/hige-shitara-korosu/]]
 }
 
 流石にもっと読んだと思うけど、timesに貼ってあった分だけ。
@@ -66,27 +66,27 @@
 週報の書き方が全然わかっていないんだけどこれでいいんだろうか。読んだ記事を手入力でペタペタするのもう嫌なので来週末にはracco-timesがちょっと形になっていることを祈ります。
 
 {* 目標}
-{list
-  毎日寝る前にSorted³で次の日の日程を組む,
-  YouTubeを開く日を3日以内に抑える（日月水金は見ない）,
-  新歓パンフレットの自分の担当分の執筆を終わらせる,
-  新歓パンフレットの環境構築のヘルプを全員分終わらせる,
-  去年・一昨年の組版を参考にクラスファイルを実装する,
-  掃除をする,
-  今あるゴミを全部出す,
-  5日以上は22:30までに寝る,
-  3日以上は6:00に起きる,
-  [@ 簡単な3DCGの制作, https://blender3d.biz/simple3dcg.html]に取り組む,
-  [@ Create with Code - コードを使ってゲームを作ろう, https://learn.unity.com/course/create-with-code-jp]に取り組む,
-  ジョットクのスライドを完成させる,
-  AREのプレゼンテーションを提出する,
-  The SATySFi bookを読み終える,
-  詳解Rustプログラミングを読み終える,
-  racco-timesで分報のDiscord投稿と日報の登録を実装する,
-  チゲ鍋をつくる,
-  1週間分のメニューを考えてから買い物に行く,
-  [@ 実例によるPureScript, https://aratama.github.io/purescript/purescript-book-ja.html]の第4章〜第6章まで取り組む,
-  [@ 低レイヤを知りたい人のためのCコンパイラ作成入門, https://www.sigbus.info/compilerbook]のステップ16手前まで進める
+{ul
+  [li 毎日寝る前にSorted³で次の日の日程を組む],
+  [li YouTubeを開く日を3日以内に抑える（日月水金は見ない）],
+  [li 新歓パンフレットの自分の担当分の執筆を終わらせる],
+  [li 新歓パンフレットの環境構築のヘルプを全員分終わらせる],
+  [li 去年・一昨年の組版を参考にクラスファイルを実装する],
+  [li 掃除をする],
+  [li 今あるゴミを全部出す],
+  [li 5日以上は22:30までに寝る],
+  [li 3日以上は6:00に起きる],
+  [li [@ 簡単な3DCGの制作, https://blender3d.biz/simple3dcg.html]に取り組む],
+  [li [@ Create with Code - コードを使ってゲームを作ろう, https://learn.unity.com/course/create-with-code-jp]に取り組む],
+  [li ジョットクのスライドを完成させる],
+  [li AREのプレゼンテーションを提出する],
+  [li The SATySFi bookを読み終える],
+  [li 詳解Rustプログラミングを読み終える],
+  [li racco-timesで分報のDiscord投稿と日報の登録を実装する],
+  [li チゲ鍋をつくる],
+  [li 1週間分のメニューを考えてから買い物に行く],
+  [li [@ 実例によるPureScript, https://aratama.github.io/purescript/purescript-book-ja.html]の第4章〜第6章まで取り組む],
+  [li [@ 低レイヤを知りたい人のためのCコンパイラ作成入門, https://www.sigbus.info/compilerbook]のステップ16手前まで進める]
 }
 
 重い...。がんばりたいと思います。

@@ -3,8 +3,8 @@
 お寿司食べたりケーキを食べたりしました。良い一日だった...
 
 {** やったこと}
-{list
-  Zennに[@ 自作マークアップ言語からはじめる自作ブログ, https://zenn.dev/momeemt/articles/developed-half-scratch-blog]を投稿した
+{ul
+  [li Zennに[@ 自作マークアップ言語からはじめる自作ブログ, https://zenn.dev/momeemt/articles/developed-half-scratch-blog]を投稿した]
 }
 
 頑張った〜〜！もうちょっと脚注芸を細かくやるとか詳細な説明入れるとかしたほうがいいかなと思ったけどまあまあ飽きも来ているので終わらせることができてよかった。
