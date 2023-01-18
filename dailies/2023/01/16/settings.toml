@@ -1,6 +1,6 @@
 version = "0.0.1"
 
 [blog]
-overview = ""
-thumbnail = 16
-published = false
+overview = "電球が切れた"
+thumbnail = 7
+published = true
