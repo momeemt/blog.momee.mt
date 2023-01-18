@@ -2,5 +2,5 @@ version = "0.0.1"
 
 [blog]
 overview = ""
-thumbnail = 16
+thumbnail = 5
 published = false
