@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "履修組んだ"
+thumbnail = 16
+published = true
