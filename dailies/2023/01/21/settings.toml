@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "部屋の整いに関心"
+thumbnail = 3
+published = true
