@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "レポートギリギリ選手権"
+thumbnail = 15
+published = true
