@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "シチュー失敗"
+thumbnail = 14
+published = true
