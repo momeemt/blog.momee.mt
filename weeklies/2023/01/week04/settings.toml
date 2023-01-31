@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "SATySFiと料理と凍結の1週間"
+thumbnail = 5
+published = true
