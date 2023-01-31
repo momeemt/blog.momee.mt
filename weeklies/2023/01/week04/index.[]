@@ -1,0 +1,66 @@
+{* 今週の日報}
+{ul
+  [li [@ 2023.01.22, /daily/2023/01/22/daily.html]],
+  [li [@ 2023.01.23, /daily/2023/01/23/daily.html]],
+  [li [@ 2023.01.24, /daily/2023/01/24/daily.html]],
+  [li [@ 2023.01.25, /daily/2023/01/25/daily.html]],
+  [li [@ 2023.01.26, /daily/2023/01/26/daily.html]],
+  [li [@ 2023.01.27, /daily/2023/01/27/daily.html]],
+  [li [@ 2023.01.28, /daily/2023/01/28/daily.html]],
+  [li [@ 2023.01.29, /daily/2023/01/29/daily.html]],
+  [li [@ 2023.01.30, /daily/2023/01/30/daily.html]],
+  [li [@ 2023.01.31, /daily/2023/01/31/daily.html]],
+}
+
+{* やったこと}
+{ul
+  [li 新歓パンフレット作成],
+  [li OOSC 第1章読んだ],
+  [li Vimのキーバインドの勉強],
+  [li jsys ネミvol.1, vol.2],
+  [li kdb_parseに機能を追加した],
+  [li twine-backendの実装],
+  [li The SATySFi bookを読んだ],
+  [li 局ミに出席した],
+  [li 洗濯機が給水しなかったので蛇口について勉強した],
+  [li QRのモックを作成した],
+  [li SOSミに出席した],
+  [li jsysの引き継ぎを受けた],
+  [li ARE最終報告書を提出]
+}
+
+今週<^ 10日もあった>はjsys関連の作業が多かった。
+普通に時間がなく、来週からまた締切に追われる生活が始まるかと思うとやや憂鬱。
+
+{* 料理した}
+{ul
+  [li 鰹のパスタ],
+  [li 鰹の中華風たたき],
+  [li シチュー],
+  [li チャーシュー],
+  [li 味玉]
+}
+
+{* GitHub}
+{img github.png, もうcontributions数えるの飽きた}
+
+{* 反省}
+生活リズムが狂った。まあ、1ヶ月経ったら意識もこうなるから仕方ないかもね。
+
+{* 目標}
+2月1日〜7日の目標
+
+{ul
+  [li 新歓パンフレットを完成させて担当の先生から承認をいただく],
+  [li QRのモックを完成させて局員にタスクを割り振る・環境構築docsを書く],
+  [li 5日以外、22:30までに就寝する],
+  [li YouTubeを見ない],
+  [li VM環境を整備する],
+  [li sos23-backendをローカルで開発できるようにする],
+  [li ゼロから学ぶRystを読み終える],
+  [li ネスペの申し込みをして勉強計画を立てる],
+  [li Habitifyの設定をする],
+  [li Sortedでスケジュール管理を再開する],
+  [li mejiroのデプロイをする（[@ GCActions - Create a repository dispatch event, https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#create-a-repository-dispatch-event]）],
+  [li 金フレ 1〜100]
+}

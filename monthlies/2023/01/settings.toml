@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "最強寒波に為す術もなかった"
+thumbnail = 1
+published = true
