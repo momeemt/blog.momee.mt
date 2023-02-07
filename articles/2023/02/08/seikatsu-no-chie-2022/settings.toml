@@ -1,0 +1,8 @@
+version = "0.0.1"
+
+[blog]
+title = "ひとりぐらし"
+overview = "丁寧さを獲得したい！"
+tags = ["生活"]
+thumbnail = 5
+published = false
