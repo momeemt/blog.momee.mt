@@ -1,0 +1,10 @@
+{* やったこと}
+{ul
+  [li しめじとツナのパスタを作った],
+  [li [@ cotowali, https://github.com/cotowali/cotowali]のドキュメントをちょっと読んだ],
+  [li [@ タイムラプス動画を作成するスクリプト, https://github.com/momeemt/focup]を書いた],
+  [li パンフ仕上げ]
+}
+
+macosのgrep、perl likeな正規表現が使えないことに驚いた。ggrep入れた。
+パンフのクラスファイルをガチャガチャいじって、とりあえず完成させた。大変だった。でも完成してよかった！
