@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "暖かくなってきた気がする度に身体の感覚を疑っている"
+thumbnail = 6
+published = true
