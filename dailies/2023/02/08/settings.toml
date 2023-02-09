@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "徹夜ほど意味のないものはないよ"
+thumbnail = 2
+published = true
