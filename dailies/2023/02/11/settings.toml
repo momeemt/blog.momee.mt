@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "人気すぎてびっくりした"
+thumbnail = 15
+published = true
