@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "Ithim úll"
+thumbnail = 14
+published = true
