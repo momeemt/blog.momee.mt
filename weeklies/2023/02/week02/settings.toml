@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "試験が迫っているので振り返りは省略"
+thumbnail = 7
+published = true
