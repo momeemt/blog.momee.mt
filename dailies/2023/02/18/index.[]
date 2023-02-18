@@ -1,0 +1,20 @@
+{* やったこと}
+{ul
+  [li QRの実装・レビュー],
+  {ul
+    [li 単体テストだけじゃなくて結合テスト・E2Eテストもやってみたい気持ちがある],
+    [li 型でさまざまなものを守りたい気持ちがある],
+    [li ドキュメントをしっかり残したい気持ちがある]
+  },
+  [li 良い感じの資料をいくつか見つけた],
+  {ul
+    [li [@ 計算機科学実験及演習4 (コンパイラ) , http://www.fos.kuis.kyoto-u.ac.jp/~umatani/le4/index.html]],
+    [li [@ Arm64 Assembly Language, http://nw.tsuda.ac.jp/lec/arm64/mac_m1/]],
+    [li [@ Arm A-profile A64 Instruction Set Architecture, https://developer.arm.com/documentation/ddi0602/2022-12/?lang=en]]
+  }
+}
+
+{** 感想}
+ショックな出来事があって午後からはずっと憂鬱気味だった。やることはやれたのでよかった。
+
+資料は言語処理系あたり。しばらく勉強をさぼっていたけど再帰下降パーザがかなりわかった<^ いわゆる、"完全に理解した">ので9ccを倒して、色々なコンパイラを書いてみたい気持ちが強まっている。あと、来年ジョットクでNim compilerへの貢献をテーマにやりたいので、タイガーブックを6、7月くらいまでに読み終えてみたいかもな。春休みは時間をとってしっかり理解します。
