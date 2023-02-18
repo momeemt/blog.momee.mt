@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "期末レポートを倒した！"
+thumbnail = 9
+published = true
