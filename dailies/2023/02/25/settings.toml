@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "そういえば: チーズかなり好きだわ"
+thumbnail = 1
+published = true
