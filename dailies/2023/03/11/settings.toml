@@ -1,6 +1,6 @@
 version = "0.0.1"
 
 [blog]
-overview = ""
-thumbnail = 16
-published = false
+overview = "インフラへの気持ち++"
+thumbnail = 3
+published = true
