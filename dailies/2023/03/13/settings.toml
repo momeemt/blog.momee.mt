@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "筑波に戻ってきてしまった"
+thumbnail = 16
+published = true
