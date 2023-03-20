@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "ぼんやりとわかるような　わからないような"
+thumbnail = 7
+published = true
