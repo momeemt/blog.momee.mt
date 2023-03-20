@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "メールサーバ建てた"
+thumbnail = 13
+published = true
