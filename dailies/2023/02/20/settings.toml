@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "総合研究棟B"
+thumbnail = 11
+published = true
