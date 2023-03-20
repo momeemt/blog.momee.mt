@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "星の王子さまミュージアムに行った"
+thumbnail = 2
+published = true
