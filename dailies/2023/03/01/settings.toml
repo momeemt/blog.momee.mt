@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "ゼミと再入稿"
+thumbnail = 3
+published = true
