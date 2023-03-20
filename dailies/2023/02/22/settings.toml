@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "早寝早起きを失って久しい"
+thumbnail = 13
+published = true
