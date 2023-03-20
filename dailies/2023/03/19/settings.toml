@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "間に合う気配が微塵もない"
+thumbnail = 10
+published = true
