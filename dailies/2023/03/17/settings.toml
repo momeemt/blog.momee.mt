@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "地下鉄を縦横無尽"
+thumbnail = 12
+published = true
