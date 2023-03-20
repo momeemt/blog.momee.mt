@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "命名だけでなく柱まで逆張る"
+thumbnail = 6
+published = true
