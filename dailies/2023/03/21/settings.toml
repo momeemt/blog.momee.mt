@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "襲来！abap34"
+thumbnail = 10
+published = true
