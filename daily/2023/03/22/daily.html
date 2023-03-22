@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://blog.momee.mt/2023/03/22/daily.html">
+    <meta property="og:title" content="2023.03.22 | blog.momee.mt">
+    <meta property="og:description" content="WBC">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://blog.momee.mt/assets/8.png">
+    <meta property="og:site_name" content="blog.momee.mt">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="../../../../style.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <link rel="icon" href="/assets/favicon.ico">
+    <title>2023.03.22 | blog.momee.mt</title>
+  </head>
+  <body>
+    <div id="uniArticleRoot">
+      <div class="title">
+        <h1>2023.03.22</h1>
+        <p class="title_overview">WBC</p>
+      </div>
+      <article>
+        <h1>やったこと</h1><ul><li>jsysの開発サーバを建ててTerraformにまとめた</li><li>coins計算機環境への問い合わせ</li><li>新歓Web</li></ul><p></p><p>午前はabapとWBCを見ていた。6回くらいから心臓が痛すぎて直視できなかった。三振で抑えたのは流石に興奮した、今後も野球見てしまうかもしれない。スポーツ観戦を普段あまりしないけどかなり楽しめた。</p><p>新歓Webの403問題、問い合わせてある程度明らかになった。良かった。Nixビルドと格闘していたけどGatsbyが依存しているsharpとの相性が悪く<sup><a href="#fn-というかおおよそdarwin-arm64が悪い">[1]</a></sup>、前に進まなかった。もう最悪完成してればいいのでNixは一旦忘れてWebを完成させないと死ぬ...<br /></p><p><div><div class="footnote_header">脚注</div><ol class="footnote_ordered-list"><li id="fn-というかおおよそdarwin-arm64が悪い" class="footnote_ordered-list"><span>というかおおよそdarwin-arm64が悪い</span></li></ol></div></p>
+      </article>
+      <footer>
+        <div>
+          <a href="../../../../index.html">記事一覧に戻る</a> | 
+          <a href="../../../../daily/index.html">日報一覧に戻る</a> | 
+          <a href="../../../../weekly/index.html">週報一覧に戻る</a> | 
+          <a href="../../../../monthly/index.html">月報一覧に戻る</a> | 
+          <a href="https://github.com/momeemt/blog.momee.mt" target="_blank">source</a>
+        </div>
+        <small>&copy; 2023 Mutsuha Asada</small>
+      </footer>
+    </div>
+    <script>
+      window.WebFontConfig = {
+        google: { families: ['Noto Sans JP'] },
+        active: function() {
+          sessionStorage.fonts = true;
+        }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+      async function subscribe() {
+        fetch('http://localhost:3000/poll')
+        .then((res) => {
+          if (res.status === 200) {
+            location.reload()
+          }
+        })
+        .catch((e) => {
+          console.error(e)
+        })
+      }
+      subscribe();
+    </script>
+  </body>
+</html>
