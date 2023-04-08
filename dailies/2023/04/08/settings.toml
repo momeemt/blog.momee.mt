@@ -1,6 +1,6 @@
 version = "0.0.1"
 
 [blog]
-overview = ""
+overview = "生活の立て直し"
 thumbnail = 16
-published = false
+published = true
