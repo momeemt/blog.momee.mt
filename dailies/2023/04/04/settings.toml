@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "Flakesに誘われている"
+thumbnail = 5
+published = true
