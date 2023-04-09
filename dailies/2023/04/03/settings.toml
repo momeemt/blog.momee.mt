@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "パスワード、リセット！"
+thumbnail = 6
+published = true
