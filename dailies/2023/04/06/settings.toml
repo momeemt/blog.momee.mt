@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "大慌てメール移行"
+thumbnail = 3
+published = true
