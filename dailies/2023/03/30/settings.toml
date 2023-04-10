@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "春はUPSの季節"
+thumbnail = 10
+published = true
