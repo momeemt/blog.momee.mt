@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "勇気が必要、あとは勇気"
+thumbnail = 16
+published = true
