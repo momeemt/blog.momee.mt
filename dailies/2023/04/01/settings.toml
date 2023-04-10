@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "推薦される場合やそうでない場合"
+thumbnail = 8
+published = true
