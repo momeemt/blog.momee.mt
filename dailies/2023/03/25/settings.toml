@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "狂気の京都"
+thumbnail = 15
+published = true
