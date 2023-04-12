@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "WORDIAN顔だけした"
+thumbnail = 12
+published = true
