@@ -1,6 +1,6 @@
 version = "0.0.1"
 
 [blog]
-overview = ""
-thumbnail = 16
-published = false
+overview = "鳥料理、全部おいしい"
+thumbnail = 15
+published = true
