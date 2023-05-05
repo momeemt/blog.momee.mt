@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "NASが動き始めた"
+thumbnail = 12
+published = true
