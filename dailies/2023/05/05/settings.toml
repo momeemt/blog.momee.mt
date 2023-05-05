@@ -1,6 +1,6 @@
 version = "0.0.1"
 
 [blog]
-overview = ""
+overview = "朝マックでは補いきれないしんどさがある"
 thumbnail = 16
-published = false
+published = true
