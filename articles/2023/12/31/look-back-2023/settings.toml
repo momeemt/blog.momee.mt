@@ -1,0 +1,8 @@
+version = "0.0.1"
+
+[blog]
+title = "2023年 ふりかえり"
+overview = "1年が段々早くなる"
+tags = ["近況"]
+thumbnail = 11
+published = false
