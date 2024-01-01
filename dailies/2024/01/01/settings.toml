@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "高尾山へ"
+thumbnail = 2
+published = true
