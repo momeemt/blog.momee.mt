@@ -1,0 +1,8 @@
+version = "0.0.1"
+
+[blog]
+title = "趣味2023"
+overview = "羊文学、シンクロニシティ、M1..."
+tags = ["音楽", "お笑い"]
+thumbnail = 9
+published = false
