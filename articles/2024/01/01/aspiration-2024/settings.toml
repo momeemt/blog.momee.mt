@@ -1,0 +1,8 @@
+version = "0.0.1"
+
+[blog]
+title = "2024年 抱負"
+overview = "読む 書く 考える"
+tags = ["抱負"]
+thumbnail = 6
+published = true
