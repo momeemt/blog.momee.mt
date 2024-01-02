@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "window間の移動にもっと慣れたい"
+thumbnail = 15
+published = true
