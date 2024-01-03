@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "12時間睡眠"
+thumbnail = 14
+published = true
