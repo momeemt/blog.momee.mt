@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://blog.momee.mt/2024/01/04/daily.html">
+    <meta property="og:title" content="2024.01.04 | blog.momee.mt">
+    <meta property="og:description" content="ハードウェアが難しすぎる">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://blog.momee.mt/assets/13.png">
+    <meta property="og:site_name" content="blog.momee.mt">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="../../../../style.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <link rel="icon" href="/assets/favicon.ico">
+    <title>2024.01.04 | blog.momee.mt</title>
+  </head>
+  <body>
+    <div id="uniArticleRoot">
+      <div class="title">
+        <h1>2024.01.04</h1>
+        <p class="title_overview">ハードウェアが難しすぎる</p>
+      </div>
+      <article>
+        <h1>やったこと</h1><ul><li>momicamlを進めた</li><li>並列処理アーキテクチャのレポートの概要を固めた</li><li>Anki</li></ul><p></p><p>今日は8時くらいに目が覚めた。その反動か夕方に珍しく眠ってしまった。<br />最近ちょっと過眠気味というか、寝不足が一気に解消できている感じがする。お正月っていいね</p><p>並列処理アーキテクチャのレポートがとにかく難しくて全然わからなくて困っている。<br />解けないとかではなく言っている意味が全然わからない。確実に入学後一番難しい授業だと思う。<br />今はちょっとモチベーションが落ちているのでパタヘネを読みつつ来年あたりにもう一度授業資料を読み込んでみたい。分からないまま卒業するのは悔しい。ハードウェアの挙動も把握してから卒業したい。</p><p>https://qiita.com/mohki7/items/76b4cdda669bce548511<br />を読んで英語へのモチベーションを上げていた。にしてもこの人超人すぎる。</p><p></p>
+      </article>
+      <footer>
+        <div>
+          <a href="../../../../index.html">記事一覧に戻る</a> | 
+          <a href="../../../../daily/index.html">日報一覧に戻る</a> | 
+          <a href="../../../../weekly/index.html">週報一覧に戻る</a> | 
+          <a href="../../../../monthly/index.html">月報一覧に戻る</a> | 
+          <a href="https://github.com/momeemt/blog.momee.mt" target="_blank">source</a>
+        </div>
+        <small>&copy; 2023 Mutsuha Asada</small>
+      </footer>
+    </div>
+    <script>
+      window.WebFontConfig = {
+        google: { families: ['Noto Sans JP'] },
+        active: function() {
+          sessionStorage.fonts = true;
+        }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+      async function subscribe() {
+        fetch('http://localhost:3000/poll')
+        .then((res) => {
+          if (res.status === 200) {
+            location.reload()
+          }
+        })
+        .catch((e) => {
+          console.error(e)
+        })
+      }
+      subscribe();
+    </script>
+  </body>
+</html>
