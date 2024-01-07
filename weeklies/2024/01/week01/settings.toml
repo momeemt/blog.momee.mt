@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "月ごとに週報があるのは不便だな..."
+thumbnail = 8
+published = true
