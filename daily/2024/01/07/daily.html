@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://blog.momee.mt/2024/01/07/daily.html">
+    <meta property="og:title" content="2024.01.07 | blog.momee.mt">
+    <meta property="og:description" content="気分は最悪">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://blog.momee.mt/assets/10.png">
+    <meta property="og:site_name" content="blog.momee.mt">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="../../../../style.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <link rel="icon" href="/assets/favicon.ico">
+    <title>2024.01.07 | blog.momee.mt</title>
+  </head>
+  <body>
+    <div id="uniArticleRoot">
+      <div class="title">
+        <h1>2024.01.07</h1>
+        <p class="title_overview">気分は最悪</p>
+      </div>
+      <article>
+        <h1>やったこと</h1><ul><li>小学校時代の友人と会った</li><li>clangdと格闘</li><li>Anki</li></ul><p></p><p>久しぶりに小学校時代の同級生と会った。<br />彼はいつの間にかすごく明るくなっていた。そうなるように努めていたらしい。逆に僕は社交性に関する努力を全くしなかったのでむしろこちらの方が暗かったかもしれない。<br />大学入学以降の話や、料理などについて数時間喋って解散した。懐かしい。成人式には行くらしい。</p><p>相変わらずclangdと格闘していた。cmakeを導入してからさらに複雑になり手に負えなくなったので、ビルド周りはmakeを使うことにした。<br />cmakeが生成するcompile_commands.jsonにインクルードパスをマニュアルで挿入してあげたらVSCodeでは上手く動くようになった。neovimの方もlspconfigの設定を少し書き換えれば動きそうな予感はした。<br />もちろんCへの解像度が粗い僕自身の能力不足が理由なんだけど、それにしても複雑すぎないだろうかと思っていた。ビルド作業というのは本来はこれくらいの難しさがあって、ツールチェーンが上手く覆い隠してくれてその上で分かった気になっていただけなのだろうか。あまりにも知らないことが多すぎて、Linuxの鈍器本を通読することへの興味は強まっている。</p><p>明日は同窓会があるので今日中にDSA実験の課題を終わらせなければならなかったのだが、お正月を挟んでやる気を消失しているわ提供されたソースコードに不満があるわで全く手が動かなかった。今の時点ではソースコードすら完成していないのでもうダメかもしれないなという気持ちが徐々に芽生え始めている。同窓会も結局憂鬱になり始めているし何もかもダメだ。</p><p></p>
+      </article>
+      <footer>
+        <div>
+          <a href="../../../../index.html">記事一覧に戻る</a> | 
+          <a href="../../../../daily/index.html">日報一覧に戻る</a> | 
+          <a href="../../../../weekly/index.html">週報一覧に戻る</a> | 
+          <a href="../../../../monthly/index.html">月報一覧に戻る</a> | 
+          <a href="https://github.com/momeemt/blog.momee.mt" target="_blank">source</a>
+        </div>
+        <small>&copy; 2023 Mutsuha Asada</small>
+      </footer>
+    </div>
+    <script>
+      window.WebFontConfig = {
+        google: { families: ['Noto Sans JP'] },
+        active: function() {
+          sessionStorage.fonts = true;
+        }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+      async function subscribe() {
+        fetch('http://localhost:3000/poll')
+        .then((res) => {
+          if (res.status === 200) {
+            location.reload()
+          }
+        })
+        .catch((e) => {
+          console.error(e)
+        })
+      }
+      subscribe();
+    </script>
+  </body>
+</html>
