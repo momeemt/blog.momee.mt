@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "この家、冬に弱すぎる"
+thumbnail = 6
+published = true
