@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "おみくじで言うところの、凶の週"
+thumbnail = 9
+published = true
