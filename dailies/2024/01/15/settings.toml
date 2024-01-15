@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "ARE最終発表会"
+thumbnail = 2
+published = true
