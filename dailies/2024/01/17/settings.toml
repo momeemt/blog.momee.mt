@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "LSPと喋る"
+thumbnail = 16
+published = true
