@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "健康生活"
+thumbnail = 14
+published = true
