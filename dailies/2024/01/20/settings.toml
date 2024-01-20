@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "バタチキ2024"
+thumbnail = 13
+published = true
