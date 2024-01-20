@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://blog.momee.mt/2024/01/20/daily.html">
+    <meta property="og:title" content="2024.01.20 | blog.momee.mt">
+    <meta property="og:description" content="バタチキ2024">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://blog.momee.mt/assets/13.png">
+    <meta property="og:site_name" content="blog.momee.mt">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="../../../../style.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <link rel="icon" href="/assets/favicon.ico">
+    <title>2024.01.20 | blog.momee.mt</title>
+  </head>
+  <body>
+    <div id="uniArticleRoot">
+      <div class="title">
+        <h1>2024.01.20</h1>
+        <p class="title_overview">バタチキ2024</p>
+      </div>
+      <article>
+        <h1>やったこと</h1><ul><li>バイオインフォマティクス 1日目</li><li>CoPLのNat導出システムを実装した</li></ul><p></p><p>集中授業1日目。午前はシェルの練習だったけど、午後から生物の知識が足りなさすぎてずっと置いていかれていた。ただ、遺伝子データベースを使ってDNAの断片から細胞を同定するような内容にとても興味を惹かれた。フィジカルコンピューティングにせよ、灰オインフォマティクスにせよ、他分野と情報の融合分野はかなり面白く感じている。</p><p>あと、午前は暇だったのでCoPLを読んで最初のNat導出システムを実装していた。timesが少し難しい。論理と形式化の内容に近くて、少し忘れかけているので時間をかけて練習問題を解いていきたい</p><p>夕ご飯にバターチキンカレーを作った。かなり時間がかかるので作り始めるのに勇気が必要だけど、カレー粉で漬け込むバタチキ<sup><a href="#fn-ZAZY">[1]</a></sup>は格別なので良かった。お酒に手が伸びかけたけど強い意志で抑えた。かなり偉い。</p><p>最近はTogglを使うように頑張っていて、ログを見るのが楽しいのでもう少し細かく記録したいなあと思っている。あと9:00〜18:00に勝手に設定したコアタイム(?)に大学に行けているのでかなり調子がいい。寝不足なので日中はぼんやりしていて、進捗は出ていない<br /></p><p><div><div class="footnote_header">脚注</div><ol class="footnote_ordered-list"><li id="fn-ZAZY" class="footnote_ordered-list"><span>ZAZY</span></li></ol></div></p>
+      </article>
+      <footer>
+        <div>
+          <a href="../../../../index.html">記事一覧に戻る</a> | 
+          <a href="../../../../daily/index.html">日報一覧に戻る</a> | 
+          <a href="../../../../weekly/index.html">週報一覧に戻る</a> | 
+          <a href="../../../../monthly/index.html">月報一覧に戻る</a> | 
+          <a href="https://github.com/momeemt/blog.momee.mt" target="_blank">source</a>
+        </div>
+        <small>&copy; 2023 Mutsuha Asada</small>
+      </footer>
+    </div>
+    <script>
+      window.WebFontConfig = {
+        google: { families: ['Noto Sans JP'] },
+        active: function() {
+          sessionStorage.fonts = true;
+        }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+      async function subscribe() {
+        fetch('http://localhost:3000/poll')
+        .then((res) => {
+          if (res.status === 200) {
+            location.reload()
+          }
+        })
+        .catch((e) => {
+          console.error(e)
+        })
+      }
+      subscribe();
+    </script>
+  </body>
+</html>
