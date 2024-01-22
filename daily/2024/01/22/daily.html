@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://blog.momee.mt/2024/01/22/daily.html">
+    <meta property="og:title" content="2024.01.22 | blog.momee.mt">
+    <meta property="og:description" content="Cをもっとわかりたい">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://blog.momee.mt/assets/11.png">
+    <meta property="og:site_name" content="blog.momee.mt">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="../../../../style.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <link rel="icon" href="/assets/favicon.ico">
+    <title>2024.01.22 | blog.momee.mt</title>
+  </head>
+  <body>
+    <div id="uniArticleRoot">
+      <div class="title">
+        <h1>2024.01.22</h1>
+        <p class="title_overview">Cをもっとわかりたい</p>
+      </div>
+      <article>
+        <h1>やったこと</h1><ul><li>DSA実験の授業に出た</li><li>DSA実験 基本課題までレポートを書いた</li><li>libpureちょっとだけ</li></ul><p></p><p>今日は少し寝坊して9時半ごろに大学に行った。コアタイムはちょっと厳しくつけている（？）</p><p>DSA実験の課題、なかなかどうしてやる気が出ず、ダラダラ進めて基本課題までレポートを書いた。まあ前日に慌ててやっていた先週以前よりはマシか</p><p>libc再実装に結局興味が出てしまって文字列の出力を実装した。アセンブリを書いてシステムコールを叩いたのだけど、aarch64-darwin向けの情報が少なすぎるからコンテナ上で開発しようかなという気持ちになっている。アセンブリもっとしっかりわかりたい</p><p>成績開示だった。一番心配な並列処理アーキテクチャが開示されず、心労続行という感じ<br />他に不安だった専門英語、体育、CGは全部まずまずといった感じだった。並列しなないでほしい...<sup><a href="#fn-何を今さら、という感じではある">[1]</a></sup></p><p>明日は9時までに大学に着きたい<br /></p><p><div><div class="footnote_header">脚注</div><ol class="footnote_ordered-list"><li id="fn-何を今さら、という感じではある" class="footnote_ordered-list"><span>何を今さら、という感じではある</span></li></ol></div></p>
+      </article>
+      <footer>
+        <div>
+          <a href="../../../../index.html">記事一覧に戻る</a> | 
+          <a href="../../../../daily/index.html">日報一覧に戻る</a> | 
+          <a href="../../../../weekly/index.html">週報一覧に戻る</a> | 
+          <a href="../../../../monthly/index.html">月報一覧に戻る</a> | 
+          <a href="https://github.com/momeemt/blog.momee.mt" target="_blank">source</a>
+        </div>
+        <small>&copy; 2023 Mutsuha Asada</small>
+      </footer>
+    </div>
+    <script>
+      window.WebFontConfig = {
+        google: { families: ['Noto Sans JP'] },
+        active: function() {
+          sessionStorage.fonts = true;
+        }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+      async function subscribe() {
+        fetch('http://localhost:3000/poll')
+        .then((res) => {
+          if (res.status === 200) {
+            location.reload()
+          }
+        })
+        .catch((e) => {
+          console.error(e)
+        })
+      }
+      subscribe();
+    </script>
+  </body>
+</html>
