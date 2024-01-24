@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "めちゃくちゃ風強かった"
+thumbnail = 9
+published = true
