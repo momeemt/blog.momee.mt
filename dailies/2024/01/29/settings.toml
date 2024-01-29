@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "vlog生活（1日目）"
+thumbnail = 4
+published = true
