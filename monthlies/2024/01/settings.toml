@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "まだ洗濯機が凍ってなくて安心"
+thumbnail = 2
+published = true
