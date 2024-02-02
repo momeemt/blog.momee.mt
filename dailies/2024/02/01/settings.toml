@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "サザ / 大阪王将 / 寝不足"
+thumbnail = 1
+published = true
