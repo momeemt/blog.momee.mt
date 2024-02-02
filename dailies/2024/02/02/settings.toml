@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "ここに書く文章を考えるのが大変"
+thumbnail = 16
+published = true
