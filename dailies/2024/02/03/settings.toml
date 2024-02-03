@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "節分・恵方巻き"
+thumbnail = 15
+published = true
