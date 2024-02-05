@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://blog.momee.mt/2024/02/04/daily.html">
+    <meta property="og:title" content="2024.02.04 | blog.momee.mt">
+    <meta property="og:description" content="スヤスヤ / 大学">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://blog.momee.mt/assets/14.png">
+    <meta property="og:site_name" content="blog.momee.mt">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="../../../../style.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <link rel="icon" href="/assets/favicon.ico">
+    <title>2024.02.04 | blog.momee.mt</title>
+  </head>
+  <body>
+    <div id="uniArticleRoot">
+      <div class="title">
+        <h1>2024.02.04</h1>
+        <p class="title_overview">スヤスヤ / 大学</p>
+      </div>
+      <article>
+        <h1>やったこと</h1><ul><li>momicaml</li><li>お米炊いた</li></ul><p></p><p>11時ごろに起きて14時ごろに大学に来た。流石に大学に来ること自体は慣れてきていて良いと思う。<br />最近は口内炎が治らないので睡眠時間優先にしている。昨日は結局1時ごろに寝てしまったのでお昼まですやすや寝てしまったってワケ</p><p>口内炎療養tipsが溜まりつつある。エアコンは付けずに寝たほうが良くて、今年は暖冬なので凍死レベルではない<sup><a href="#fn-去年はマジでやばかった">[1]</a></sup>こともわかった。<br />イソジンがかなり効いている気がする。やはりイソジンは全てを解決する...</p><p>日報のoverview<sup><a href="#fn-日報一覧の日付の下の1文">[2]</a></sup>をGPTで生成したら？と言われて確かにな〜と思っていたが、日報の文章の中からトピックごとに雑に分離して3つ単語拾ってくるくらいなら古典的な方法でも出来るのでは？と思ったので若干NLPに興味が出た。ゼロから2をずっと積んでいるし春休み中に読みたいかもな〜かなり</p><p>関係ないけど来年の節分は2/2らしい</p><p>去年は日報を全然書いていないので出来ないけど、去年の日報 / 先月の日報 / 先週の日報などのリンクを貼っておきたいかも</p><p>microbloggingを合成して1つのブログにするやつをずっとやりたいんだよね〜<sup><a href="#fn-ので雑に書いてる、今">[3]</a></sup><br />nostrクライアント<sup><a href="#fn-見れなくて良くて、あとでtimesを一括で持って来れるならなんでも良い">[4]</a></sup>を作って日報を生成できるようにしたいかも<br /></p><p><div><div class="footnote_header">脚注</div><ol class="footnote_ordered-list"><li id="fn-去年はマジでやばかった" class="footnote_ordered-list"><span>去年はマジでやばかった</span></li><li id="fn-日報一覧の日付の下の1文" class="footnote_ordered-list"><span>日報一覧の日付の下の1文</span></li><li id="fn-ので雑に書いてる、今" class="footnote_ordered-list"><span>ので雑に書いてる、今</span></li><li id="fn-見れなくて良くて、あとでtimesを一括で持って来れるならなんでも良い" class="footnote_ordered-list"><span>見れなくて良くて、あとでtimesを一括で持って来れるならなんでも良い</span></li></ol></div></p>
+      </article>
+      <footer>
+        <div>
+          <a href="../../../../index.html">記事一覧に戻る</a> | 
+          <a href="../../../../daily/index.html">日報一覧に戻る</a> | 
+          <a href="../../../../weekly/index.html">週報一覧に戻る</a> | 
+          <a href="../../../../monthly/index.html">月報一覧に戻る</a> | 
+          <a href="https://github.com/momeemt/blog.momee.mt" target="_blank">source</a>
+        </div>
+        <small>&copy; 2023 Mutsuha Asada</small>
+      </footer>
+    </div>
+    <script>
+      window.WebFontConfig = {
+        google: { families: ['Noto Sans JP'] },
+        active: function() {
+          sessionStorage.fonts = true;
+        }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+      async function subscribe() {
+        fetch('http://localhost:3000/poll')
+        .then((res) => {
+          if (res.status === 200) {
+            location.reload()
+          }
+        })
+        .catch((e) => {
+          console.error(e)
+        })
+      }
+      subscribe();
+    </script>
+  </body>
+</html>
