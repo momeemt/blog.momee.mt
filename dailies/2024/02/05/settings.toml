@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "雪が降った 2月だね"
+thumbnail = 13
+published = true
