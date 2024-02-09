@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "青い空、白い雲"
+thumbnail = 10
+published = true
