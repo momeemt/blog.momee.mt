@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "基板設計"
+thumbnail = 11
+published = true
