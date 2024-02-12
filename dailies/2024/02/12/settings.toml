@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "餃子が大成功"
+thumbnail = 6
+published = true
