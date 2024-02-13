@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://blog.momee.mt/2024/02/13/daily.html">
+    <meta property="og:title" content="2024.02.13 | blog.momee.mt">
+    <meta property="og:description" content="メディセンの支払いは17:30まで">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://blog.momee.mt/assets/5.png">
+    <meta property="og:site_name" content="blog.momee.mt">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="../../../../style.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <link rel="icon" href="/assets/favicon.ico">
+    <title>2024.02.13 | blog.momee.mt</title>
+  </head>
+  <body>
+    <div id="uniArticleRoot">
+      <div class="title">
+        <h1>2024.02.13</h1>
+        <p class="title_overview">メディセンの支払いは17:30まで</p>
+      </div>
+      <article>
+        <h1>やったこと</h1><ul><li>精神科に行った</li><li>Brackのメタデータ / マクロ周辺の実装を終わらせた</li><li>Semantic Tokensのドキュメントを読んだり実装したりしている</li></ul><p></p><p>今日は大学に行けなかった。昨日結局お布団に入ってから寝付けず3時くらいまで目が冴えていた。<br />最近は精神的に沈んでいる時間が多い。大学に入学してから無駄にした時間について考えていた。経験的にこういうことは考えて良い方向に進むことは何もない<br />が、秋頃からの無気力さから徐々に立ち直れていて、まだ未勉強の分野が色々ある<sup><a href="#fn-特にパタヘネ周辺や機械学習">[1]</a></sup>ことへの焦りに向き合えるようになってきたという見方もある。就職への恐怖感が最近は支配的<br />眠剤を飲む時間が遅くなって寝るのが遅くなるとはずっと思っていて、今日はとりあえず飲んだ。</p><p>最近は劇的にではないのもののBrackを進めている。Brack ASTを扱う際のユーティリティ関数やLanguage Serverが形になってきたら、Nimで書いていた頃よりも一歩実用に近づきそう。<br />使っている内にRust自体への興味も強くなっている。なんか結局マクロから逃れることができなさそうで、近いうちにやる予定。macro_rules!しか知らなかったけど手続型マクロというのもあるらしい。<br /></p><p><div><div class="footnote_header">脚注</div><ol class="footnote_ordered-list"><li id="fn-特にパタヘネ周辺や機械学習" class="footnote_ordered-list"><span>特にパタヘネ周辺や機械学習</span></li></ol></div></p>
+      </article>
+      <footer>
+        <div>
+          <a href="../../../../index.html">記事一覧に戻る</a> | 
+          <a href="../../../../daily/index.html">日報一覧に戻る</a> | 
+          <a href="../../../../weekly/index.html">週報一覧に戻る</a> | 
+          <a href="../../../../monthly/index.html">月報一覧に戻る</a> | 
+          <a href="https://github.com/momeemt/blog.momee.mt" target="_blank">source</a>
+        </div>
+        <small>&copy; 2023 Mutsuha Asada</small>
+      </footer>
+    </div>
+    <script>
+      window.WebFontConfig = {
+        google: { families: ['Noto Sans JP'] },
+        active: function() {
+          sessionStorage.fonts = true;
+        }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+      async function subscribe() {
+        fetch('http://localhost:3000/poll')
+        .then((res) => {
+          if (res.status === 200) {
+            location.reload()
+          }
+        })
+        .catch((e) => {
+          console.error(e)
+        })
+      }
+      subscribe();
+    </script>
+  </body>
+</html>
