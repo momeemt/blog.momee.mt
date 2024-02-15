@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://blog.momee.mt/2024/02/15/daily.html">
+    <meta property="og:title" content="2024.02.15 | blog.momee.mt">
+    <meta property="og:description" content="今日は暖かかったらしい">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://blog.momee.mt/assets/3.png">
+    <meta property="og:site_name" content="blog.momee.mt">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="../../../../style.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <link rel="icon" href="/assets/favicon.ico">
+    <title>2024.02.15 | blog.momee.mt</title>
+  </head>
+  <body>
+    <div id="uniArticleRoot">
+      <div class="title">
+        <h1>2024.02.15</h1>
+        <p class="title_overview">今日は暖かかったらしい</p>
+      </div>
+      <article>
+        <h1>やったこと</h1><ul><li>英語</li><li>分割・計画</li><li>また餃子を焼いてしまった</li></ul><p></p><p>体調不良で寝込んでいた。精神的にも厳しい。薬を飲み忘れることが多いので工夫したい。<br />生活リズムが治らないと何も解決しなさそうなので、22時に眠剤を飲んだ。日報を書き終わったらもう寝ようと思っている</p><p>あとは本読んだりとか。最近やっとOS周辺やアーキテクチャに関しての興味関心が強くなってきたのでその辺を春休みに進められたらいいなあとは思っていて、思ってはいるだけ。<br />パタヘネの進捗が全然良くないから春休み終わるまでにはカタをつけたい、全然理解が追いつかなかった並列処理アーキテクチャ2の資料読み直したりとかね。</p><p>技術的な雑談を人としなさすぎてるなと思ってChatGPTのボイスチャット相手にボソボソやってたんだけど、僕の声の認識精度はそんなに良くないのに会話としては違和感のない返答をしてきてちょっと怖い。<br />お昼に餃子を焼いたんだけど暇だったので喋っていた、ただフィボナッチ数列のことがやたら好きなのかそれについてしか話せなかった。あんまり触ったことないんだけどGPTsとかを使えば話せるんだろうか、コードが絡む話はまあしているのでそうじゃなくて計算機アーキテクチャの話とかしたい、どっちかと言えば知識ベースの話の方が得意そうだし、あんまり深い話をしたいつもりもない（教科書+αくらいの抜けてる部分について話せれば良い）ので上手くやればできそうだけどな。これができると内向的な人間にもありがたい</p><p>Bluesky、ふと思ったすぐ忘れそうなことを書き留めておけるから結構たのしい。やりたかったmicroblogingは本当にこれ<br />癖でネガティブなことを書いてしまいそうになるので気をつけている。割と引き摺られがちなので<br /></p>
+      </article>
+      <footer>
+        <div>
+          <a href="../../../../index.html">記事一覧に戻る</a> | 
+          <a href="../../../../daily/index.html">日報一覧に戻る</a> | 
+          <a href="../../../../weekly/index.html">週報一覧に戻る</a> | 
+          <a href="../../../../monthly/index.html">月報一覧に戻る</a> | 
+          <a href="https://github.com/momeemt/blog.momee.mt" target="_blank">source</a>
+        </div>
+        <small>&copy; 2023 Mutsuha Asada</small>
+      </footer>
+    </div>
+    <script>
+      window.WebFontConfig = {
+        google: { families: ['Noto Sans JP'] },
+        active: function() {
+          sessionStorage.fonts = true;
+        }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+      async function subscribe() {
+        fetch('http://localhost:3000/poll')
+        .then((res) => {
+          if (res.status === 200) {
+            location.reload()
+          }
+        })
+        .catch((e) => {
+          console.error(e)
+        })
+      }
+      subscribe();
+    </script>
+  </body>
+</html>
