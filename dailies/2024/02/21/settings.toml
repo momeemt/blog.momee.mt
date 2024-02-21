@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "料理後にすぐ片付けなかった鍋は一生洗われない"
+thumbnail = 13
+published = true
