@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "放置しない・向き合う"
+thumbnail = 11
+published = true
