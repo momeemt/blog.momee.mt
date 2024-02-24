@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://blog.momee.mt/2024/02/24/daily.html">
+    <meta property="og:title" content="2024.02.24 | blog.momee.mt">
+    <meta property="og:description" content="リスニングとヒヤシンスで韻踏める">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://blog.momee.mt/assets/10.png">
+    <meta property="og:site_name" content="blog.momee.mt">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="../../../../style.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <link rel="icon" href="/assets/favicon.ico">
+    <title>2024.02.24 | blog.momee.mt</title>
+  </head>
+  <body>
+    <div id="uniArticleRoot">
+      <div class="title">
+        <h1>2024.02.24</h1>
+        <p class="title_overview">リスニングとヒヤシンスで韻踏める</p>
+      </div>
+      <article>
+        <h1>やったこと</h1><ul><li>ABC342に出た</li><li>英単語</li><li>英文法</li><li>Windows11のインストール</li><li>GSoCのプロジェクト眺めた</li></ul><p></p><p>なんかFFmpegのプロジェクト、ずっと睨めっこしてるんだけど難しすぎる。久しぶりにabapやs7tyaと会話してGSoCの話をしていたが、今年のorgsにはNixOSがあることに気がついた。<br />NixOS、LLVM（できそうな課題があった）、Chromiumなどに興味が出ていて、なんだかふらふらしているなという感じではある。</p><p>英語やった。なんか若干シャドーイングができるようになった気がしたがまあ気のせいかも。<br />Part2の演習を何度かやってみたが、Part1よりも流石に聞き取りにくい。本当に単語拾いゲームになっている<br /></p>
+      </article>
+      <footer>
+        <div>
+          <a href="../../../../index.html">記事一覧に戻る</a> | 
+          <a href="../../../../daily/index.html">日報一覧に戻る</a> | 
+          <a href="../../../../weekly/index.html">週報一覧に戻る</a> | 
+          <a href="../../../../monthly/index.html">月報一覧に戻る</a> | 
+          <a href="https://github.com/momeemt/blog.momee.mt" target="_blank">source</a>
+        </div>
+        <small>&copy; 2023 Mutsuha Asada</small>
+      </footer>
+    </div>
+    <script>
+      window.WebFontConfig = {
+        google: { families: ['Noto Sans JP'] },
+        active: function() {
+          sessionStorage.fonts = true;
+        }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+      async function subscribe() {
+        fetch('http://localhost:3000/poll')
+        .then((res) => {
+          if (res.status === 200) {
+            location.reload()
+          }
+        })
+        .catch((e) => {
+          console.error(e)
+        })
+      }
+      subscribe();
+    </script>
+  </body>
+</html>
