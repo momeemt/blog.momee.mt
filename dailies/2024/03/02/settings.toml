@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "雑記"
+thumbnail = 3
+published = true
