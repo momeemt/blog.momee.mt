@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://blog.momee.mt/2024/02/week03/weekly.html">
+    <meta property="og:title" content="2024.02 Week03 | blog.momee.mt">
+    <meta property="og:description" content="バレンタイン">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://blog.momee.mt/assets/14.png">
+    <meta property="og:site_name" content="blog.momee.mt">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="../../../../style.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <link rel="icon" href="/assets/favicon.ico">
+    <title>2024.02 Week03 | blog.momee.mt</title>
+  </head>
+  <body>
+    <div id="uniArticleRoot">
+      <div class="title">
+        <h1>2024.02 Week03</h1>
+        <p class="title_overview">バレンタイン</p>
+      </div>
+      <article>
+        <h1>先週の週報</h1><p><a href="/weekly/2024/02/week02/weekly.html" target="_blank" rel="noopener noreferrer">2024 Week06</a></p><h1>今週の日報</h1><ul><li><a href="/daily/2024/02/12/daily.html" target="_blank" rel="noopener noreferrer">2024.02.12</a></li><li><a href="/daily/2024/02/13/daily.html" target="_blank" rel="noopener noreferrer">2024.02.13</a></li><li><a href="/daily/2024/02/14/daily.html" target="_blank" rel="noopener noreferrer">2024.02.14</a></li><li><a href="/daily/2024/02/15/daily.html" target="_blank" rel="noopener noreferrer">2024.02.15</a></li><li><a href="/daily/2024/02/16/daily.html" target="_blank" rel="noopener noreferrer">2024.02.16</a></li><li><a href="/daily/2024/02/17/daily.html" target="_blank" rel="noopener noreferrer">2024.02.17</a></li><li><a href="/daily/2024/02/18/daily.html" target="_blank" rel="noopener noreferrer">2024.02.18</a></li></ul><p></p><p>忘れていたので3月にはなったが週報を書く。Week07。もう7週間過ぎたのか...</p><h1>今週やったこと</h1><ul><li>Brackのメタデータから実装本体を得る仕組みの実装をした</li><li>精神科に行った</li><li>Semantic Tokensのドキュメントを読んだ</li><li>momicaml 定数畳み込みを実装した</li><li>院試の情報集めをした</li><li>英語</li><li>momicamlのインライン化について考えた</li><li>恋人と会った</li></ul><p></p><p>英語あんまりやらなかった。Brackやって病院行ってmomicamlやっていたのかな。<br />恋人と会ったのもかなり大きかった。週末はほとんどそれ。<br />先週書いたやることリストはほとんど消化できなかった。残念...</p><p>3月にこれを書いているのでもう2月が全然ダメだったことは既に知っているんだけど、一方で完璧主義は必要なくて長い目で見た時の継続が大事だということを強めに意識しているので、まあ3月は取り返せるように無理せずやっていきたいくらいの気持ちでいる。この時続かなくなってしまった英語も現時点ではまた再開して頑張っているので（2月の僕には）安心して欲しい<br /></p>
+      </article>
+      <footer>
+        <div>
+          <a href="../../../../index.html">記事一覧に戻る</a> | 
+          <a href="../../../../daily/index.html">日報一覧に戻る</a> | 
+          <a href="../../../../weekly/index.html">週報一覧に戻る</a> | 
+          <a href="../../../../monthly/index.html">月報一覧に戻る</a> | 
+          <a href="https://github.com/momeemt/blog.momee.mt" target="_blank">source</a>
+        </div>
+        <small>&copy; 2023 Mutsuha Asada</small>
+      </footer>
+    </div>
+    <script>
+      window.WebFontConfig = {
+        google: { families: ['Noto Sans JP'] },
+        active: function() {
+          sessionStorage.fonts = true;
+        }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+      async function subscribe() {
+        fetch('http://localhost:3000/poll')
+        .then((res) => {
+          if (res.status === 200) {
+            location.reload()
+          }
+        })
+        .catch((e) => {
+          console.error(e)
+        })
+      }
+      subscribe();
+    </script>
+  </body>
+</html>
