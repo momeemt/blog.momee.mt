@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "地震があった"
+thumbnail = 4
+published = true
