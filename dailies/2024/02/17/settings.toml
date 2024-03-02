@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "シンクロニシティ vs バレンタイン"
+thumbnail = 1
+published = true
