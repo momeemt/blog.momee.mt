@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "Part3が終わった"
+thumbnail = 1
+published = true
