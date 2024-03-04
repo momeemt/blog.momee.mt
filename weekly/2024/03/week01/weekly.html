@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://blog.momee.mt/2024/03/week01/weekly.html">
+    <meta property="og:title" content="2024.03 Week01 | blog.momee.mt">
+    <meta property="og:description" content="アクティブ・ウィーク">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://blog.momee.mt/assets/16.png">
+    <meta property="og:site_name" content="blog.momee.mt">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="../../../../style.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <link rel="icon" href="/assets/favicon.ico">
+    <title>2024.03 Week01 | blog.momee.mt</title>
+  </head>
+  <body>
+    <div id="uniArticleRoot">
+      <div class="title">
+        <h1>2024.03 Week01</h1>
+        <p class="title_overview">アクティブ・ウィーク</p>
+      </div>
+      <article>
+        <h1>先週の週報</h1><p><a href="/weekly/2024/02/week04/weekly.html" target="_blank" rel="noopener noreferrer">2024 Week08</a></p><h1>今週の日報</h1><ul><li><a href="/daily/2024/02/26/daily.html" target="_blank" rel="noopener noreferrer">2024.02.26</a></li><li><a href="/daily/2024/02/27/daily.html" target="_blank" rel="noopener noreferrer">2024.02.27</a></li><li><a href="/daily/2024/02/28/daily.html" target="_blank" rel="noopener noreferrer">2024.02.28</a></li><li><a href="/daily/2024/02/29/daily.html" target="_blank" rel="noopener noreferrer">2024.02.29</a></li><li><a href="/daily/2024/03/01/daily.html" target="_blank" rel="noopener noreferrer">2024.03.01</a></li><li><a href="/daily/2024/03/02/daily.html" target="_blank" rel="noopener noreferrer">2024.03.02</a></li><li><a href="/daily/2024/03/03/daily.html" target="_blank" rel="noopener noreferrer">2024.03.03</a></li></ul><p></p><p>Week9、最近は夜でなければ手袋がなくても過ごせることが多い。</p><h1>今週やったこと</h1><ul><li>情報システム特別講義A レポート</li><li>成績開示を見た</li><li>イベントに出かけた</li><li>GSoCのメンターさんに連絡した</li><li>nixpkgsに手をつけ始めた</li><li>デート</li><li>英語</li></ul><p></p><p>最近は英語に時間を使っているのでプログラムが書けていなくてしんどい。<br />リスニングを中心に勉強していて、勉強を始めた当初よりは確実に内容を理解できるようになっていて嬉しい。<br />試験まであと2週間なのでがんばりたい。</p><p>イベントに出かけたりデートに行ったりと珍しくアクティブな一週間だった。</p><p>GSoC関連の雑談を友達とすることが増えてきた。<br />Proposalを書くにはまだ手をつけられていないが、メンターさんやnixpkgsのコミッタの方に相談する、nixpkgsにパッケージを追加してみる（まだ成功していないけど）など、行動に繋がってきたので来週は実際にPRを提出するとか、書き始めるとか一歩でも進めると良いと思っている。</p><h1>来週やること</h1><ul><li>インターンの申込書類を書き終えて相談する</li><li>英語 講座を終わらせたい...</li><li>nixpkgsにPRを1つでも出したい</li><li>早寝早起きを今度こそ　徐々に生活リズムを前倒しにする</li><li>ハンズオンWebAssemblyを読みたい...けどこれは無理せず</li></ul><p></p><p>最近は新しい目標が色々できて、それに向かって手を動かせているので嬉しい。<br />来週はもうちょっと高みを狙っちゃう感じにしたい。週報を書きそびれて3/4にこれを書いているけど、英語だけやって1日が終わってしまうことが多いので生活リズムを前倒しにして、午前に英語、午後に情報、みたいな時間の使い方ができれば最高だなと思っている。<br /></p>
+      </article>
+      <footer>
+        <div>
+          <a href="../../../../index.html">記事一覧に戻る</a> | 
+          <a href="../../../../daily/index.html">日報一覧に戻る</a> | 
+          <a href="../../../../weekly/index.html">週報一覧に戻る</a> | 
+          <a href="../../../../monthly/index.html">月報一覧に戻る</a> | 
+          <a href="https://github.com/momeemt/blog.momee.mt" target="_blank">source</a>
+        </div>
+        <small>&copy; 2023 Mutsuha Asada</small>
+      </footer>
+    </div>
+    <script>
+      window.WebFontConfig = {
+        google: { families: ['Noto Sans JP'] },
+        active: function() {
+          sessionStorage.fonts = true;
+        }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+      async function subscribe() {
+        fetch('http://localhost:3000/poll')
+        .then((res) => {
+          if (res.status === 200) {
+            location.reload()
+          }
+        })
+        .catch((e) => {
+          console.error(e)
+        })
+      }
+      subscribe();
+    </script>
+  </body>
+</html>
