@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "春デート"
+thumbnail = 2
+published = true
