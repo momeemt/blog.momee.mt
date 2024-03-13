@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "体調不良2日目"
+thumbnail = 11
+published = true
