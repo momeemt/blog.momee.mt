@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://blog.momee.mt/2024/03/13/daily.html">
+    <meta property="og:title" content="2024.03.13 | blog.momee.mt">
+    <meta property="og:description" content="簡潔に意味のある情報をまとめるのが苦手">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://blog.momee.mt/assets/8.png">
+    <meta property="og:site_name" content="blog.momee.mt">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="../../../../style.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <link rel="icon" href="/assets/favicon.ico">
+    <title>2024.03.13 | blog.momee.mt</title>
+  </head>
+  <body>
+    <div id="uniArticleRoot">
+      <div class="title">
+        <h1>2024.03.13</h1>
+        <p class="title_overview">簡潔に意味のある情報をまとめるのが苦手</p>
+      </div>
+      <article>
+        <h1>やったこと</h1><ul><li>CV 2日目</li><li>C++の勉強を始めた</li></ul><p></p><p>CVに集中できなくてお昼頃にC++の勉強をしていた。<br />思い返すとC++を真面目に勉強した記憶がなく、簡単なSTLやクラスの基礎くらいなら分かるがソフトウェアをきちんと設計して書くとか、メモリ周辺や特有の問題で踏み抜いてはいけないポイントなどは全然抑えられていない。Nimを勉強していた頃にテンプレートプログラミングだけはよく参照していたので今のC++の知識はなんかかなり歪んでいると思う。<br />ので、しばらくはそれ。Effective~あたりも積んでいるのでその辺りを流し読みしたりまとめつつ、できるだけ高速に勉強したいというサブテーマもある。僕は結構手を動かす勉強みたいなのに依存しがちで、速度も遅いし話にならないくらい理解できていないトピックがかなりあり困っているので。</p><p>今日の本題は全然C++じゃなくてCVなんだけど進まなかった。書くの難しすぎる。こんな締め切り直前にガッと書く類のものじゃないから前からやっていたはずなのに気づけば間際だった。最悪。<br /></p>
+      </article>
+      <footer>
+        <div>
+          <a href="../../../../index.html">記事一覧に戻る</a> | 
+          <a href="../../../../daily/index.html">日報一覧に戻る</a> | 
+          <a href="../../../../weekly/index.html">週報一覧に戻る</a> | 
+          <a href="../../../../monthly/index.html">月報一覧に戻る</a> | 
+          <a href="https://github.com/momeemt/blog.momee.mt" target="_blank">source</a>
+        </div>
+        <small>&copy; 2023 Mutsuha Asada</small>
+      </footer>
+    </div>
+    <script>
+      window.WebFontConfig = {
+        google: { families: ['Noto Sans JP'] },
+        active: function() {
+          sessionStorage.fonts = true;
+        }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+      async function subscribe() {
+        fetch('http://localhost:3000/poll')
+        .then((res) => {
+          if (res.status === 200) {
+            location.reload()
+          }
+        })
+        .catch((e) => {
+          console.error(e)
+        })
+      }
+      subscribe();
+    </script>
+  </body>
+</html>
