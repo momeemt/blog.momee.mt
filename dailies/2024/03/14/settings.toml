@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "調子が良かった"
+thumbnail = 7
+published = true
