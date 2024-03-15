@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "特に何もしない日もある"
+thumbnail = 6
+published = true
