@@ -1,0 +1,6 @@
+version = "0.0.1"
+
+[blog]
+overview = "鳥刺し本当に美味しい"
+thumbnail = 4
+published = true
