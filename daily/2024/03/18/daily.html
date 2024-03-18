@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://blog.momee.mt/2024/03/18/daily.html">
+    <meta property="og:title" content="2024.03.18 | blog.momee.mt">
+    <meta property="og:description" content="Updated to iOS 17.4">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://blog.momee.mt/assets/3.png">
+    <meta property="og:site_name" content="blog.momee.mt">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="../../../../style.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <link rel="icon" href="/assets/favicon.ico">
+    <title>2024.03.18 | blog.momee.mt</title>
+  </head>
+  <body>
+    <div id="uniArticleRoot">
+      <div class="title">
+        <h1>2024.03.18</h1>
+        <p class="title_overview">Updated to iOS 17.4</p>
+      </div>
+      <article>
+        <h1>Done</h1><ul><li>LeetCode 141</li><li>Implemented Brack</li><li>Arrange photos in my smartphone</li><li>Updated iOS version</li></ul><p></p><h1>Thoughts</h1><p>I'm starting to get interested in English, so from today I will be writing a post in the foreign language every day.<br />I couldn't remeber why I stopped, although I remembered trying to do it when I was at school.</p><p>It was already afternoon when I woke up. Alcohol brings no benefits. I can't trust alcohol and people who like it.</p><p>Tomorrow I will write longer statements than today. I have studied reading and listening for TOEIC although improving writing skills may require other learning. I currently use<a href="https://www.deepl.com/write" target="_blank" rel="noopener noreferrer">DeepL Write</a>for polishing statements, but I want to be able to write alone.<br />I can go to bed early for the first time in a long time. Good night!<br /></p>
+      </article>
+      <footer>
+        <div>
+          <a href="../../../../index.html">記事一覧に戻る</a> | 
+          <a href="../../../../daily/index.html">日報一覧に戻る</a> | 
+          <a href="../../../../weekly/index.html">週報一覧に戻る</a> | 
+          <a href="../../../../monthly/index.html">月報一覧に戻る</a> | 
+          <a href="https://github.com/momeemt/blog.momee.mt" target="_blank">source</a>
+        </div>
+        <small>&copy; 2023 Mutsuha Asada</small>
+      </footer>
+    </div>
+    <script>
+      window.WebFontConfig = {
+        google: { families: ['Noto Sans JP'] },
+        active: function() {
+          sessionStorage.fonts = true;
+        }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+      async function subscribe() {
+        fetch('http://localhost:3000/poll')
+        .then((res) => {
+          if (res.status === 200) {
+            location.reload()
+          }
+        })
+        .catch((e) => {
+          console.error(e)
+        })
+      }
+      subscribe();
+    </script>
+  </body>
+</html>
