@@ -1,0 +1,14 @@
+{* Done}
+{ul
+  [li Tried to parse Wasm binary],
+  [li Referred a document of wasmparser],
+  [li Go to the dinner with my father],
+  [li Played Pokemon after a long time]
+}
+
+{* Thoughts}
+The modsurfer, developed by the author of extism, can get the names of all the functions defined in the Wasm binary. However, it only distributes the binary, not the source code. We need to change our crate to only rely on the crates delivered on crate.io to publish Brack there, but modsurfer is hosted on GitHub. So I tried to parse the Wasm binary to implement the plugin system of the Brack language. There are many things I don't understand, I want to learn Wasm and Wasmparser with their documents.
+
+My dad and I go out for dinner in the evening and we talk about various things.
+
+I played Pokemon after a long time. I'm addicted to games, so I shouldn't buy a game machine and any software.
