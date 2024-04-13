@@ -1,0 +1,17 @@
+{* Done}
+{ul
+  [li Added terraform and nix support to neovim configurations],
+  [li Cleaned my room],
+  [li Cooked fried rice],
+  [li Set up toaster]
+}
+
+
+{* Thoughts}
+I woke up in the afternoon, so I was depressed.
+
+Adding terraform and nix support to neovim makes it easy to set up infrastructure. I am interested in and using OpenTofu which is trying to replace Terraform without license problems.
+We should use terraform tools, especially like terraform-ls, although they have compatibility and (probably) can't prepare to go on their own...
+First of all, I want to manage the Cloudflare settings with this tool.
+
+I'm very tired because I cleaned my room in five hours. We should do this regularly...
