@@ -1,6 +1,0 @@
-version = "0.0.1"
-
-[blog]
-overview = "かなりしんどい"
-thumbnail = 5
-published = true
