@@ -1,33 +1,31 @@
 {
+  description = "momeemt's blog";
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/24.05";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
     flake-utils.url = "github:numtide/flake-utils";
-    flake-compat = {
-      url = "github:edolstra/flake-compat";
-      flake = false;
-    };
-    brack.url = "github:brack-lang/brack";
+    brack-repo.url = "github:brack-lang/brack";
+    ravenlog-repo.url = "github:brack-lang/ravenlog?dir=backend";
   };
+
   outputs = {
-    self,
     nixpkgs,
     flake-utils,
-    flake-compat,
-    brack,
+    brack-repo,
+    ravenlog-repo,
     ...
   }:
     flake-utils.lib.eachDefaultSystem (
       system: let
-        pkgs = import nixpkgs {
-          inherit system;
-        };
-        brack-bin = brack.packages.${system}.default;
+        pkgs = import nixpkgs {inherit system;};
+        brack = brack-repo.packages.${system}.default;
+        ravenlog = ravenlog-repo.packages.${system}.default;
       in {
         devShell = pkgs.mkShell {
           buildInputs = with pkgs; [
             nil
             alejandra
-            brack-bin
+            brack
+            ravenlog
           ];
         };
       }

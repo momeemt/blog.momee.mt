@@ -1,0 +1,65 @@
+title = "blog.momee.mt"
+description = "Mutsuha Asadaのブログ"
+comments = [
+    "計算機と羊文学が好きで、マヨネーズが苦手です",
+    "人のブログを読むのが好きなので書いている",
+    "虫が苦手 春が怖い",
+    "精神状態が悪い時は散歩に出掛けてください",
+    "スティックカフェオレのことをコーヒーと呼んでいる",
+    "卵料理を作るのが好きで、卵はそれほどではない",
+    "鍋料理を賞味期限内に食べ切ることができない",
+    "今のが最後のモチモチの木でした また来てください"
+]
+logo = "logo.png"
+
+[footer]
+admin = "Mutsuha Asada"
+period = "2022-2025"
+
+[[footer.links]]
+text = "Portfolio"
+href = "https://momee.mt"
+
+[[footer.links]]
+text = "Source"
+href = "https://github.com/momeemt/blog.momee.mt"
+
+[posts]
+heading = "記事"
+description = "技術メモ・読んだ本・行った場所"
+
+[external]
+heading = "外部に公開した記事"
+description = "Zenn・noteの記事"
+
+[external.zenn]
+id = "momeemt"
+
+[external.note]
+id = "momeemt"
+
+[daily]
+heading = "1日のふりかえり"
+description = "日記"
+
+[weekly]
+heading = "1週間のふりかえり"
+description = "水曜日は全休にした方が良いです"
+
+[monthly]
+heading = "1ヶ月のふりかえり"
+description = "月初処理: 今月のプレイリスト作成"
+
+[annual]
+heading = "1年のふりかえり"
+description = "思い出・煩悩・年越しそば・その他"
+
+[[authors]]
+id = "momeemt"
+name = "Mutsuha Asada"
+icon = "authors/momeemt.png"
+admin = true
+email = "me@momee.mt"
+website = "https://momee.mt"
+github_id = "momeemt"
+x_id = "mutsuha_asada"

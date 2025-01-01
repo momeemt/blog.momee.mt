@@ -1,0 +1,4 @@
+title = "Example post"
+description = "This is an example post"
+tags = ["example", "post"]
+author_id = "taro"
