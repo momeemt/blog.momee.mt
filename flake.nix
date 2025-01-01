@@ -1,30 +1,32 @@
 {
+  description = "momeemt's blog";
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/23.11";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
     flake-utils.url = "github:numtide/flake-utils";
-    flake-compat = {
-      url = "github:edolstra/flake-compat";
-      flake = false;
-    };
+    brack-repo.url = "github:brack-lang/brack";
+    ravenlog-repo.url = "github:brack-lang/ravenlog?dir=backend";
   };
-  outputs = { self, nixpkgs, flake-utils, flake-compat, ... }:
+
+  outputs = {
+    nixpkgs,
+    flake-utils,
+    brack-repo,
+    ravenlog-repo,
+    ...
+  }:
     flake-utils.lib.eachDefaultSystem (
       system: let
-        pkgs = import nixpkgs {
-          inherit system;
-        };
+        pkgs = import nixpkgs {inherit system;};
+        brack = brack-repo.packages.${system}.default;
+        ravenlog = ravenlog-repo.packages.${system}.default;
       in {
         devShell = pkgs.mkShell {
           buildInputs = with pkgs; [
-            nim-unwrapped
-            nimPackages.nimble
-          ] ++ lib.optional stdenv.isDarwin (with pkgs.darwin; [
-            Security
-          ]);
-
-          shellHook = ''
-            export PATH=$PATH:$HOME/.nimble/bin
-          '';
+            nil
+            alejandra
+            brack
+            ravenlog
+          ];
         };
       }
     );

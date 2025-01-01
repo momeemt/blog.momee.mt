@@ -1,9 +1,18 @@
-# [blog.momee.mt](https://blog.momee.mt)
+# 🦉 blog.momee.mt
 
-[![Deploy](https://github.com/momeemt/blog.momee.mt/actions/workflows/deploy.yml/badge.svg)](https://github.com/momeemt/blog.momee.mt/actions/workflows/deploy.yml)
+<p align="center">
+    <img src="./assets/logo.png" />
+</p>
 
-momeemt's blog
+[momeemt](https://github.com/momeemt)のブログ
 
-# System chart
+## 記事の作成
 
-![](/drawio/blog.drawio.svg)
+```
+
+```
+
+## 寄稿
+
+
+## LICENSE
